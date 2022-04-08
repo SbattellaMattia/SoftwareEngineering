@@ -1,0 +1,36 @@
+			Requisiti funzionali					Requisiti non funzionali
+			
+			+Gestione Amministrazione				-Controllo Biglietto
+				[-Accesso Presidenza]				-Implementazione
+				-CRUD Rimborso						-Password
+				-CRUD Mostra						-Username					
+				-Gestisci Pagamento					-Grafica
+				-Gestisci Donazione					-Id Opere
+				-Report Incassi
+				-CRUD Opere 
+				-CRUD Prenotazione
+				-CRUD Abbonamento
+				-CRUD Utente
+				-CRUD Ordine
+				-CRUD TurniGuide
+				
+				
+			+Gestione Visitatore
+				-Vendi biglietto
+				-Convalida Biglietto
+				-Stampa Fattura
+				-Richiedi Catalogo
+					
+			+Gestione Sistema
+				-Gestisci Statistiche
+				-Controlla Abbonamento
+				-Gestisci Backup
+				
+			
+			
+			
+			
+			
+			
+		
+			
