@@ -1,32 +1,32 @@
 			Requisiti funzionali					Requisiti non funzionali
 			
-			+Gestione Amministrazione				-Controllo Biglietto
-				-CRUD Rimborso					-Password
-				-CRUD Mostra					-Username					
-				-Gestisci Pagamento				-Grafica
-				-Gestisci Donazione				-Id Opere
-				-Report Incassi					-Implementazione
-				-CRUD Opera 
-				-CRUD Prenotazione
-				-CRUD Abbonamento
-				-CRUD Utente
+			+Gestione Amministrazione				-Id Opere
+				-CRUD Utente					-Controllo Biglietto	
+				-CRUD Opera						-Username				
+				-CRUD Mostra					-Password		
+				-CRUD Prenotazione				-Grafica
+				-CRUD Abbonamento					-Implementazione
+				-CRUD Turni Guide
+				-CRUD Rimborso
 				-CRUD Ordine
-				-CRUD TurniGuide
-					
+				-Gestisci Pagamento
+				-Gestisci Donazione
+				-Report Incassi
+		
 			+Gestione Visitatore
 				-Compra biglietto
 				-Convalida Biglietto
-				-Stampa Fattura
 				-Richiedi Catalogo
 				-Compra Opera
+				-Stampa Fattura
 					
 			+Gestione Sistema
-				-Controlla Abbonamento
 				-Gestisci Backup
+				-Controlla Abbonamento
 				
 			+Gestione Statistiche
 				-Inserisci Dati Visitatore
-				-Visualizza Statistiche Visitatore
+				-Visualizza Statistiche Visitatori
 			
 			
 			
