@@ -1,8 +1,8 @@
 			Requisiti funzionali					Requisiti non funzionali
 			
 			+Gestione Amministrazione				-Id Opere
-				-CRUD Utente					-Controllo Biglietto	
-				-CRUD Opera						-Username				
+				-CRUD Utente					-Id Utente	
+				-CRUD Opera						-Controllo Biglietto				
 				-CRUD Mostra					-Password		
 				-CRUD Prenotazione				-Grafica
 				-CRUD Abbonamento					-Implementazione
