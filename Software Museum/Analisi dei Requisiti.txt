@@ -1,13 +1,13 @@
 			Requisiti funzionali					Requisiti non funzionali
 			
 			+Gestione Amministrazione				-Id Opere
-				-CRUD Utente					-Id Utente	
-				-CRUD Opera						-Controllo Biglietto				
-				-CRUD Mostra					-Password		
-				-CRUD Prenotazione				-Grafica
-				-CRUD Abbonamento					-Implementazione
-				-CRUD Turni Guide
-				-CRUD Rimborso
+				*-CRUD Utente					    -Id Utente
+				*-CRUD Opera						    -Controllo Biglietto
+				*-CRUD Mostra				        -Password
+				*-CRUD Prenotazione[Biglietto]		-Grafica
+				*-CRUD Abbonamento					-Implementazione
+				*-CRUD Turni Guide
+				*-CRUD Rimborso
 				-CRUD Ordine
 				-Gestisci Pagamento
 				-Gestisci Donazione
@@ -21,12 +21,17 @@
 				-Stampa Fattura
 					
 			+Gestione Sistema
-				-Gestisci Backup
+				-Effettua Backup
 				-Controlla Abbonamento
 				
 			+Gestione Statistiche
 				-Inserisci Dati Visitatore
-				-Visualizza Statistiche Visitatori
+				-VisualizzaStatisticheVisitatori
+
+TODO:
+    •Muovere [stampa fattura] e [Gestisci Pagamento] da [Gestione Visitatore|Gestione Amministrazione]
+    a [Gestione Amministrazione]
+    •[Crud Prenotazione] sarebbe [Crud Biglietto]?
 			
 			
 			
