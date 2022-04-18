@@ -29,8 +29,6 @@
 				-VisualizzaStatisticheVisitatori
 
 TODO:
-    •Muovere [stampa fattura] e [Gestisci Pagamento] da [Gestione Visitatore|Gestione Amministrazione]
-    a [Gestione Amministrazione]
     •[Crud Prenotazione] sarebbe [Crud Biglietto]?
 			
 			
