@@ -1,0 +1,43 @@
+• il biglietto va convalidato? si, deve poter essere convalidato ha scadenza
+
+• l'abbonato deve stampare il biglietto? si, perché deve rispettare gli orari delle mostre, quindi l'essere abbonato è un privilegio proprio come lo è quello di essere studente docente o avere handicap
+
+• il museo e le mostre hanno una capienza? No perché altrimenti dovremmo poter sapere quando una persona esce dal museo.
+
+• le mostre hanno gli orari? si
+
+• scadenze biglietto?	il biglietto ha durata un giorno? Deve avere la scadenza altrimenti io posso entrare con lo stesso biglietto per un anno.
+
+• tutte le opere sono vendibili? si facciamola semplice...
+
+• Turni guide, ogni persona paga un supplemento oppure prima si crea il gruppo e si aggiunge o no 50 €,? La seconda non è fattibile perché se c'è qualcuno con l'abbonamento che fa non paga parte di questi 50 €
+
+• il biglietto deve avere un identivicativo (= qr code)? In realtà non è necessario, perché a disposizione le informazioni necessarie sulla scadenza, però abbiamo deciso di lasciarlo per facilitare la convalida
+
+• le guide hanno un turno, che inizia a degli orari predefiniti, e dura tot, nel lasso di tempo prima che inizi un turno arrivano i clienti che si prenotano per quella guida fino ad un max, ma senza minimo! posso prenotarmi solo se c'è un posto disponiile entro fine giornata
+
+• Ogni zona ha la sua parte di software con ciò che puo fare segr/amm/op pubbl ma senza credenziali di accesso
+
+• I biglietti hanno la info  sul costo
+
+• La segreteria gestisce le donazioni l'amministrazione la compravendita delle opere
+
+• Il report incassi usa le info dei biglietti/compra opere/vendita opere
+
+• Qualunque visitatore può donare
+
+• una volta scaduto l'abbonamento il cliente può rinnovarlo
+
+•  il catalogo viene stampato dall'op al pubb. al cliente che lo richiede
+
+•  la segreteria, non visualizza opere/catalogo
+
+• solo le opere delle mostre sono vendibii, non quelle del museo
+
+• verifica privilegio va ad includere compra biglietto, NON gestisci pagamento)verifica
+
+• il catalogo viene generato a runtime di richiesta
+
+• Una mostra per volta
+
+• i turni chi li fa? Si dice che li fa l'amministrazione

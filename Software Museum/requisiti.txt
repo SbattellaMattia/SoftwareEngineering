@@ -1,0 +1,56 @@
+Requisiti funzionali					
+			
+			+Gestione Amministrazione				
+									
+				-CRUD Opera	---------------------------		      
+				-CRUD Mostra---------------------------				      
+				-CRUD Turni Guide---------------------------
+
+			+Gestione Cliente
+
+				-Inserisci Dati Visitatore---------------------------
+				-Crea Biglietto	---------------------------	
+				-CRUD Abbonamento---------------------------	
+
+			+Gestione Transizioni
+
+				-Stampa Scontrino---------------------------
+				-Gestisci Donazione---------------------------
+				-CRUD Acquisto Opera---------------------------
+				-CRUD Vendita Opere---------------------------
+				-Visualizza Catalogo Opere---------------------------
+				-Report Incassi---------------------------
+					
+			+Gestione Sistema
+
+				-Effettua Backup---------------------------
+				-Controllo Abbonamento---------------------------
+				-Controllo Biglietto---------------------------
+				
+			+Gestione Statistiche
+
+				-VisualizzaStatisticheOdierne---------------------------
+				-VisualizzaVisitatoriPerEtà---------------------------
+				-VisualizzaVisitatoriPerNazionalità---------------------------
+				-VisualizzaVisitatoriPerSesso---------------------------
+
+			
+			Requisiti non funzionali
+			
+			-Id Opere
+			-Id Biglietto
+			-QRCode Abbonamento
+			-Grafica
+			-Implementazione
+
+
+• chi dona? non se ne parla nella descrizione?
+• il sistema non deve aggiornare il catalogo nel tempo, lo si genera statico.
+• handicap? docente? le info sono sul biglietto?
+• Report incassi??????
+• 
+• 
+• 
+• 
+• 
+• 

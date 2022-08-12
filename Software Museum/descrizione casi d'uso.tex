@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+
+\usepackage[a4paper,top=2cm,bottom=2.4cm,left=2.4cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{bold-extra}
+
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=\arabic*{.}}
+\setlist[enumerate,2]{label=\arabic{enumi}{.}\arabic*{.}}
+\setlist[enumerate,3]{label=\arabic{enumi}{.}\arabic{enumii}{.}\arabic*{.}}
+\setlist[enumerate,4]{label=\arabic{enumi}{.}\arabic{enumii}{.}\arabic{enumiii}{.}\arabic*{.}}
+
+
+
+\title{Descrizione casi d'uso}
+\author{Valerio Morelli}
+
+\begin{document}
+
+\maketitle
+
+	\section*{CompraBiglietto}
+	
+	Questo caso d'uso consente l'acquisto di un biglietto per l'accesso al museo o ad una mostra.
+	
+	\paragraph{Attori primari:}Cliente.
+	
+	\paragraph{Attori secondari:}Operatore al pubblico.
+	
+	\paragraph{Precondizioni:}Nessuna
+	
+	\paragraph{Postcondizioni:}Nessuna.
+	
+	\paragraph{Sequenza eventi principale:}
+
+		\begin{enumerate}[itemsep=12pt,parsep=0pt]
+
+		\item Il caso d'uso inizia quando l'attore primario esprime la volontà di acquistare un biglietto.
+
+		\item \texttt{\textbf{if}} l'attore primario vuole accedere alla mostra:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item \texttt{ {include(RicercaMostra)}}
+  			\end{enumerate}	
+
+		\item L'attore secondario inserisce nel sistema i dati relativi alla tipologia del biglietto.
+
+		\item \texttt{\textbf{if}} l'attore primario richiede anche il servizio guida:
+			\begin{enumerate}[leftmargin=28pt]
+				\item  \texttt{{include(RicercaTurniGuide)}}
+				\item L'attore secondario comunica all'attore primario gli orari dei turni delle guide disponibili.
+				\item \texttt{\textbf{if}} c'è almeno un turno disponibile \texttt{\textbf{and}} l'attore primario ne sceglie uno:
+					\begin{enumerate}[leftmargin=34pt]
+						\item L'attore secondario inserisce la scelta dell'attore primario nel sistema.
+					\end{enumerate}
+  			\end{enumerate}	
+
+		\item Il sistema memorizza le informazioni e stampa il biglietto.
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi alternativa:}Nessuna.
+
+\end{document}
+
+
+
+
+
+
+
+
