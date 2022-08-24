@@ -41,3 +41,10 @@
 • Una mostra per volta
 
 • i turni chi li fa? Si dice che li fa l'amministrazione
+
+==========TODO •c'è un problema in gestione cliente tra verificaPrivilegio e verifica abbonamento dovrebbe esserci l'include
+==========TODO •c'è un problema con compraOpera vendiOpera, tra gestione cliente e gestione amministrazione
+==========TODO •in gestioneCliente c'è DonaOpera e Gestisci Donazione. Il primo è il cliente che parla con l'op al p. e gli dice che vuole donare. L'op. inserisce la richiesta di donazione la quale verrà presa in considerazione(accettata/rifiutata) dalla segreteria in GestisciDonazione
+TODO ̉ corsivo sui nomi degli attori
+==========TODO compra biglietto include inserisci dati cliente
+TODO in verifica abbonamento ci deve essere will come ho fatto in convalidaBigl 
