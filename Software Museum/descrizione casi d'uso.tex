@@ -116,14 +116,14 @@ Gli attori coinvolti in questi casi d'uso sono il \emph{Cliente non abbonato} e 
 \end{itemize}
 
 \medskip
-Gli attori coinvolti in questi casi d'uso sono il \emph{Cliente non abbonato} e il \emph{Cliente abbonato}, generalizzati nell'attore \emph{Cliente}, e l'attore \emph{Operatore al pubblico}.
+Gli attori coinvolti in questi casi d'uso sono il \emph{Cliente abbonato}, generalizzato nell'attore \emph{Cliente}, e l'attore \emph{Operatore al pubblico}.
 
 \medskip
 Si noti che, poiché questo sistema informatico non prevede terminali sui quali il cliente può interfacciarsi direttamente, i casi d'uso istanziabili dal cliente hanno come attore secondario l'operatore al pubblico, il quale, una volta compresa la necessità del cliente, avvia la procedura interfacciandosi con il sistema.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{Gestione Cliente}
+    \includegraphics[width=0.92\textwidth]{Gestione Cliente}
     \caption{diagramma dei casi d'uso: \textbf{Gestione Cliente}}
     \label{fig:GestioneCliente}
 \end{figure}
@@ -144,11 +144,13 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 	
 	\paragraph{Sequenza eventi principale:}
 
-		\begin{enumerate}[itemsep=6pt,parsep=0pt]
+		\begin{enumerate}[itemsep=5pt,parsep=0pt]
 
 		\item Il caso d'uso inizia quando l'attore primario esprime la volontà di acquistare un biglietto.
 
 		\item L'attore secondario prende coscienza della volontà dell'attore primario e lo assiste nell'operazione.
+
+		\item L'attore secondario effettua l'accesso con le sue credenziali se richiesto.
 
 		\item \texttt{\textbf{if}} l'attore primario vuole accedere alla mostra:
 			\begin{enumerate}	[leftmargin=28pt]
@@ -456,7 +458,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 
 
 
-\pagebreak 
+\newpage 
 
 		\section*{ConvalidaBiglietto (CU 06)}
 	
@@ -468,6 +470,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 	
 	\paragraph{Precondizioni:}
 			\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+				\item Il sistema ha autenticato l'attore primario.
 				\item L'attore primario dispone di un biglietto con codice QR.
   			\end{enumerate}	
 	
@@ -526,7 +529,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 
 
 
-\pagebreak 
+\newpage 
 
 		\section*{RicercaBiglietto (CU 07)}
 	
@@ -589,7 +592,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 
 
 
-\pagebreak 
+\newpage 
 
 		\section*{VendiOpera (CU 08)}
 	
@@ -716,7 +719,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 
 
 
-\pagebreak 
+\newpage 
 
 		\section*{DonaOpera (CU 10)}
 	
@@ -1139,10 +1142,9 @@ L'attore coinvolto in questi casi d'uso è la \emph{Segreteria}.
 	
 	\paragraph{Postcondizioni:}
 	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-
+		\item Il sistema ha autenticato l'attore primario.
 		\item Nel caso in cui la richiesta sia stata accettata, il stistema ha provveduto a memorizzare la nuova opera nel database delle opere.
 		\item Il sistema ha mandato un avviso comunicante l'esito della scelta al cliente donante mediante la posta elettronica.
-
 	\end{enumerate}
 	
 	\paragraph{Sequenza eventi principale:}
@@ -1289,10 +1291,13 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	\paragraph{Attori secondari:}Nessuno.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}
-\begin{enumerate}	[leftmargin=28pt]
+\begin{enumerate}	[itemsep=8pt,parsep=0pt]
 \item Il sistema ha memorizzato tutte le modifiche nel database dei turni guide.
 \end{enumerate}
 	
@@ -1357,7 +1362,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 
 	
 	
-\pagebreak 
+\newpage 
 
 		\section*{RicercaTurnoGuida (CU 17)}
 	
@@ -1429,7 +1434,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	
 	
-	\pagebreak 
+	\newpage 
 
     \section*{CUDMostra (CU 18)}
 	
@@ -1439,10 +1444,13 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	\paragraph{Attori secondari:}Nessuno.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}
-\begin{enumerate}	[leftmargin=28pt]
+\begin{enumerate}	[itemsep=8pt,parsep=0pt]
 \item Il sistema ha memorizzato tutte le modifiche nel database delle mostre.
 \end{enumerate}
 	
@@ -1527,7 +1535,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 
 
 
-	\pagebreak 
+	\newpage 
 
 		\section*{RicercaMostra (CU 19)}
 	
@@ -1594,7 +1602,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	
 	
-	\pagebreak 
+	\newpage 
 	
 	\section*{CompraOpera (CU 20)}
 	
@@ -1604,7 +1612,10 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	\paragraph{Attori secondari:}Nessuno.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}
 		\begin{enumerate}[itemsep=8pt,parsep=0pt]
@@ -1660,7 +1671,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	
 	
-	\pagebreak 
+	\newpage 
 	
 	 \section*{CUDOpera (CU 21)}
 	
@@ -1670,10 +1681,13 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	\paragraph{Attori secondari:}Nessuno.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}
-		\begin{enumerate}	[leftmargin=28pt]
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
 			\item Il sistema ha memorizzato tutte le modifiche nel database delle opere.
 		\end{enumerate}
 	
@@ -1740,7 +1754,7 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	
 	
-	\pagebreak 
+	\newpage 
 	
 	\section*{RicercaOpera (CU 22)}
 	
@@ -1797,17 +1811,20 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 	
 	
 	
-\pagebreak 
+\newpage 
 	
 	\section*{GeneraReportIncassi (CU 23)}
 	
-	\indent\indent Il caso d’uso GeneraReportIncassi consente di generare il report degli incassi su tutte le transazioni effettuate da inizio mese fino al momento della richiesta oppure in mesi precedenti.
+	\indent\indent Questo caso d'uso consente di generare il report degli incassi su tutte le transazioni effettuate da inizio mese fino al momento della richiesta oppure in mesi precedenti.
 	
 	\paragraph{Attori primari:}Anmministrazione.%, Tempo.
 	
 	\paragraph{Attori secondari:}Nessuno.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}Nessuna.
 	
@@ -1862,100 +1879,6 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 			\item  La sequenza di eventi alternativa inizia dopo il passo 8. della sequenza di eventi principale.
 			\item  Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di transazione nel mese selezionato.
 		\end{enumerate}
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1970,420 +1893,56 @@ Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \e
 
 
 \newpage 
-
-\section{Gestione Statistiche}
-
-\indent\indent Il diagramma dei casi d'uso \textbf{Gestione Statistiche} racchiude i casi d'uso necessari per la raccolta dei dati sui clienti in forma anonima e la generazione delle statistiche in base all provenienza, all'età e al sesso del visitatore. Nel dettaglio, i casi d'uso di pertinenza sono:
-\medskip
-\begin{itemize}[itemsep=4pt]
-  \item \texttt{InserisciDatiCliente} (CU 28)
-  \item \texttt{InserisciProvenienza} (CU 29)
-  \item \texttt{InserisciEtà} (CU 30)
-  \item \texttt{InserisciSesso} (CU 31)
-  \item \texttt{VisualizzaStatistiche} (CU 32)
-  \item \texttt{VisualizzaPerProvenienza} (CU 33)
-  \item \texttt{VisualizzaPerEtà} (CU 34)
-  \item \texttt{VisualizzaPerSesso} (CU 35)
-\end{itemize}
-\medskip
-Gli attori coinvolti in questi casi d'uso sono l' \emph{Operatore al pubblico} per la popolazione dei dati sui quali inferire le statistiche e  l' \emph{Amministrazione} per la visualizzazione delle stesse.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{Gestione Statistiche}
-    \caption{diagramma dei casi d'uso: \textbf{Gestione Statistiche}}
-    \label{fig:GestioneStatistiche}
-\end{figure}
-
-\newpage
-
-\section*{InserisciDatiCliente (CU 28)}
 	
-\indent\indent Questo caso d'uso consente di inserire i dati del cliente al momento dell'acquisto del biglietto.
+	\section*{GestisciDipendenti (CU 36)}
 	
-	\paragraph{Attori primari:}Operatore al pubblico.
+	\indent\indent Questo caso d'uso consente di gestire i dipendenti che lavorano all'interno del museo.
 	
-	\paragraph{Attori secondari:}Cliente.
+	\paragraph{Attori primari:}Anmministrazione.
+	
+	\paragraph{Attori secondari:}Nessuno.
 	
 	\paragraph{Precondizioni:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-		\item Nel caso in cui il cliente disponga di un abbonamento, l'attore primario ha inserito nel sistema l'identificativo dell'abbonamento eseguendo una scannerizzazione del codice QR stampato sul fronte dell'abbonamento.
-	\end{enumerate}
-
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha autenticato l'attore primario.
+		\end{enumerate}
+	
 	\paragraph{Postcondizioni:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-		\item Il sistema ha memorizzato in forma anonima i dati inseriti.
-	\end{enumerate}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Il sistema ha modificato tutte le modifiche effettuate.
+		\end{enumerate}
 	
 	\paragraph{Sequenza eventi principale:}
 
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item Il caso d'uso inizia quando l'attore primario vuole memorizzare i dati di un cliente. 
-	    \item \texttt{\textbf{if}} il cliente dispone di un abbonamento:
-			\begin{enumerate}	[leftmargin=28pt]
-			\item Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?)
-			\item \texttt{{include(RicercaAbbonamento)}}
-  			\end{enumerate}
-  		\item \texttt{\textbf{else}}:
-  		\begin{enumerate}	[leftmargin=28pt]
-	        \item L'attore primario chiede al cliente i dati necessari.
-	        \item L'attore primario inserisce i dati nel sistema.
-	    \end{enumerate}
-		\item Il sistema memorizza i dati.
-		\item Il sistema produce un messaggio con l'esito dell'operazione.
-	
-	\end{enumerate}
-	
-	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
 		\begin{enumerate}[itemsep=8pt,parsep=0pt]
-				\item La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
-				\item L'attore secondario si rifiuta di fornire le informazioni.
-				\item L'attore primario annulla l'operazione.
-				\item Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
-		\end{enumerate}
-
-
-
-
-
-	
-	
-\newpage	
-\section*{InserisciProvenienza (CU 29)}
-	
-	\indent\indent Questo caso d'uso consente di inserire lo Stato di nascita del cliente.
-	
-	\paragraph{Id padre:}(CU 28)
-	
-	\paragraph{Attori primari:}Operatore al pubblico.
-	
-	\paragraph{Attori secondari:}Cliente.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare il Paese d'origine del cliente. 
-	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
+		
+		\item Il caso d’uso inizia quando l’attore primario desidera gestire i dipendenti del museo.
+		\item Il sistema chiede all'attore primario il reparto da gestire.
+		\item \texttt{\textbf{if}} l'attore primario vuole gestire la reception:
 			\begin{enumerate}	[leftmargin=28pt]
-			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si
-			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
-  			\end{enumerate}
-  		\item(3.) \texttt{\textbf{else}}:
-  		\begin{enumerate}	[leftmargin=28pt]
-	        \item(o3.1) L'attore primario chiede al cliente il suo Paese d'origine.
-	        \item(o3.2.) L'attore primario inserisce il Paese d'origine del cliente nel sistema.
-	    \end{enumerate}
-		\item(4.) Il sistema memorizza i dati.
-		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
-	
-	\end{enumerate}
-	
-	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
-		\begin{enumerate}[itemsep=8pt,parsep=0pt]
-				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
-				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione del suo Paese di origine.
-				\item (3.) L'attore primario annulla l'operazione.
-				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
-		\end{enumerate}
-	
-
-
-
-	
-\newpage	
-\section*{InserisciEtà (CU 30)}
-	
-	\indent\indent Questo caso d'uso consente di inserire l'età del cliente.
-	
-	\paragraph{Id padre:} (CU 28)
-	
-	\paragraph{Attori primari:}Operatore al pubblico.
-	
-	\paragraph{Attori secondari:}Cliente.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare la data di nascita del cliente. 
-	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
-			\begin{enumerate}	[leftmargin=28pt]
-			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si 
-			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
-  			\end{enumerate}
-  		\item(3.) \texttt{\textbf{else}}:
-  		\begin{enumerate}	[leftmargin=28pt]
-	        \item(o3.1) L'attore primario chiede al cliente la sua data di nascita.
-	        \item(o3.2.) L'attore primario inserisce la data di nascita del cliente nel sistema.
-	    \end{enumerate}
-		\item(4.) Il sistema memorizza i dati.
-		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
-	\end{enumerate}
-
-	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
-		\begin{enumerate}[itemsep=8pt,parsep=0pt]
-				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
-				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione della sua data di nascita.
-				\item (3.) L'attore primario annulla l'operazione.
-				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
-		\end{enumerate}
-	
-
-
-
-	
-\newpage
-\section*{InserisciSesso (CU 31)}
-	
-	\indent\indent Questo caso d'uso consente di inserire il genere del cliente.
-	
-	\paragraph{Id padre:} (CU 28)
-	
-	\paragraph{Attori primari:}Operatore al pubblico.
-	
-	\paragraph{Attori secondari:}Cliente.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare il genere del cliente. 
-	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
-			\begin{enumerate}	[leftmargin=28pt]
-			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si
-			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
-  			\end{enumerate}
-  		\item(3.) \texttt{\textbf{else}}:
-  		\begin{enumerate}	[leftmargin=28pt]
-	        \item(o3.1) L'attore primario chiede al cliente il suo genere. % :D
-	        \item(o3.2.) L'attore primario inserisce il genere del cliente nel sistema.
-	    \end{enumerate}
-		\item(4.) Il sistema memorizza i dati.
-		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
-	\end{enumerate}
-	
-	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
-		\begin{enumerate}[itemsep=8pt,parsep=0pt]
-				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
-				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione del suo genere.
-				\item (3.) L'attore primario annulla l'operazione.
-				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
-		\end{enumerate}
-	
-	
-
-
-\newpage	
-\section*{VisualizzaStatistiche CU(32)}
-	
-	\indent\indent Questo caso d'uso consente di generare statistiche in un particolare mese sulla base dei dati sui clienti raccolti in forma anonima dal sistema.
-	
-	\paragraph{Attori primari:}Anmministrazione.
-	
-	\paragraph{Attori secondari:}Nessuno.
-	
-	\paragraph{Precondizioni:}Nessuna. %L'attore primario accede al sistema.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
-		\item Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
-		\item \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item Il sistema utilizza il mese inserito come criterio di ricerca.
+				\item Il sistema mostra all'attore primario una lista degli operatori al pubblico dipendenti del museo.
+				\item L'attore apporta le modifiche necessarie al personale degli operatori al pubblico.
   			\end{enumerate}	
-		\item \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
+		\item \texttt{\textbf{else if}} l'attore primario vuole gestire la segreteria:
 			\begin{enumerate}	[leftmargin=28pt]
-				\item Il sistema utilizza il mese corrente come criterio di ricerca.
+				\item Il sistema mostra all'attore primario una lista dei segretari dipendenti del museo.
+				\item L'attore apporta le modifiche necessarie al personale dei segretari.
   			\end{enumerate}
 
-		\item \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
-		    \begin{enumerate}	[leftmargin=28pt]
-				\item \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
-					\begin{enumerate}	[leftmargin=28pt]
-						\item Il sistema aggiunge il dato sul cliente alla lista dei dati raccolti.
-		  			\end{enumerate}	
-  		    \end{enumerate}
-
-	    \item Il sistema organizza i dati sulla base dei quali genera un grafico e lo mostra a schermo.
-	    \item Il sistema calcola deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
-	    \item Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
-	\end{enumerate}
-	
-		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
-	\begin{enumerate}	[leftmargin=28pt]
-			\item  La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
-			\item  Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
-		\end{enumerate}
-	
-
-
-
-
-
-\newpage
-\section*{VisualizzaPerProvenienza (CU 33)}
-	
-	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
-	
-	\paragraph{Id padre:} (CU 32)
-	
-	\paragraph{Attori primari:}Anmministrazione.
-	
-	\paragraph{Attori secondari:}Nessuno.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
-		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
-		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
+		\item \texttt{\textbf{else if}} l'attore primario vuole gestire l'ammistrazione:
 			\begin{enumerate}	[leftmargin=28pt]
-				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
-  			\end{enumerate}	
-		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
+				\item Il sistema mostra all'attore primario una lista degli amministratori dipendenti del museo.
+				\item L'attore apporta le modifiche necessarie al personale degli amministratori.
   			\end{enumerate}
 
-		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
-		    \begin{enumerate}	[leftmargin=28pt]
-				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
-					\begin{enumerate}	[leftmargin=28pt]
-						\item (o5.1.1.) Il sistema aggiunge il Paese di origine del cliente alla lista dei dati raccolti.
-		  			\end{enumerate}	
-  		    \end{enumerate}
+		\item Il sistema memorizza tutte le modifiche effettuate al personale.
 
-	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico a torta e lo mostra a schermo.
-	    \item (7.) Il sistema calcola la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
-	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
 	\end{enumerate}
 	
-		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
-	\begin{enumerate}	[leftmargin=28pt]
-			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
-			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
-		\end{enumerate}
 	
 	
-
-
-
-
-\newpage	
-\section*{VisualizzaPerEtà (CU 34)}
-	
-	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
-	
-	\paragraph{Id padre:} (CU 32)
-	
-	\paragraph{Attori primari:}Anmministrazione.
-	    
-	\paragraph{Attori secondari:}Nessuno.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-	
-	\paragraph{Sequenza eventi principale:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
-		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
-		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
-  			\end{enumerate}	
-		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
-  			\end{enumerate}
-
-		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
-		    \begin{enumerate}	[leftmargin=28pt]
-				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
-					\begin{enumerate}	[leftmargin=28pt]
-						\item (o5.1.1) Il sistema raccoglie la data di nascita del cliente e la utilizza per calcolare l'età.
-						\item (5.1.2.) Il sistema aggiunge l'età del cliente alla lista dei dati raccolti.
-		  			\end{enumerate}	
-  		    \end{enumerate}
-
-	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico istogramma e lo mostra a schermo.
-	    \item (o7.) Il sistema calcola la media campionaria e la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
-	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
-	\end{enumerate}
-	
-		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
-	\begin{enumerate}	[leftmargin=28pt]
-			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
-			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
-		\end{enumerate}
-
-
-
-
 	
 	
-\newpage
-\section*{VisualizzaPerSesso (CU 35)}
-	
-	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
-	
-	\paragraph{Id padre:} (CU 32)
-	
-	\paragraph{Attori primari:}Anmministrazione.
-	
-	\paragraph{Attori secondari:}Nessuno.
-	
-	\paragraph{Precondizioni:}Nessuna.
-	
-	\paragraph{Postcondizioni:}Nessuna.
-
-	\paragraph{Sequenza eventi principale:}
-	\begin{enumerate}[itemsep=8pt,parsep=0pt]
-	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
-		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
-		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
-  			\end{enumerate}	
-		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
-			\begin{enumerate}	[leftmargin=28pt]
-				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
-  			\end{enumerate}
-
-		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
-		    \begin{enumerate}	[leftmargin=28pt]
-				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
-					\begin{enumerate}	[leftmargin=28pt]
-						\item (o5.1.1.) Il sistema aggiunge il genere del cliente alla lista dei dati raccolti.
-		  			\end{enumerate}	
-  		    \end{enumerate}
-
-	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico a torta e lo mostra a schermo.
-	    \item (7.) Il sistema calcola la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
-	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
-	\end{enumerate}
-	
-		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
-	\begin{enumerate}	[leftmargin=28pt]
-			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
-			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
-		\end{enumerate}
 
 
 
@@ -2656,7 +2215,10 @@ Gli attori coinvolti in questi casi d'uso sono l'attore \emph{Tempo}, capace di 
 	
 	\paragraph{Attori secondari:}Amministrazione.
 	
-	\paragraph{Precondizioni:}Nessuna.
+	\paragraph{Precondizioni:}
+		\begin{enumerate}	[itemsep=8pt,parsep=0pt]
+			\item Se il caso d'uso è stato avviato dall'attore primario \emph{Amministrazione}, Il sistema lo ha autenticato.
+		\end{enumerate}
 	
 	\paragraph{Postcondizioni:}I dati sono stati copiati.
 	
@@ -2696,7 +2258,12 @@ Gli attori coinvolti in questi casi d'uso sono l'attore \emph{Tempo}, capace di 
 			\item Il sistema copia sul disco i dati dell'evento.
 	          \end{enumerate}
 
-		\item aggiungi dati cliente
+  		\item \texttt{\textbf{for each}} dato sul visitatore nel database dei dati sui visitatori:
+	          \begin{enumerate}	[leftmargin=28pt]
+	          	\item Il sistema preleva tutte le informazioni riguardati quel visitatore.
+			\item Il sistema copia sul disco i dati del visitatore.
+	          \end{enumerate}
+
 
 		\item Il sistema organizza in una cartella adeguata i dati copiati.
 		\item Il sistema effettua l'upload sul cloud utilizzato dal museo del backup appena effettuato.
@@ -2711,9 +2278,567 @@ Gli attori coinvolti in questi casi d'uso sono l'attore \emph{Tempo}, capace di 
     	\paragraph{Sequenza eventi alternativa:} \textbf{\textit{UploadNonRiuscito}}.
 	\begin{enumerate}[itemsep=8pt,parsep=0pt]
 	\item La sequenza di eventi alternativa inizia dopo il passo 7. della sequenza di eventi principale.
-	\item Il sistema notifica all'attore secondario l'impossibilità di effettuare l'upload del backup sul cloud e visualizza il codice di stato HTTP con il relativo contenuto.
+	\item Il sistema notifica all'attore secondario l'impossibilità di effettuare l'upload del backup sul cloud e visualizza l'errore.
 	\end{enumerate}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage 
+
+\section{Gestione Statistiche}
+
+\indent\indent Il diagramma dei casi d'uso \textbf{Gestione Statistiche} racchiude i casi d'uso necessari per la raccolta dei dati sui clienti in forma anonima e la generazione delle statistiche in base all provenienza, all'età e al sesso del visitatore. Nel dettaglio, i casi d'uso di pertinenza sono:
+\medskip
+\begin{itemize}[itemsep=4pt]
+  \item \texttt{InserisciDatiCliente} (CU 28)
+  \item \texttt{InserisciProvenienza} (CU 29)
+  \item \texttt{InserisciEtà} (CU 30)
+  \item \texttt{InserisciSesso} (CU 31)
+  \item \texttt{VisualizzaStatistiche} (CU 32)
+  \item \texttt{VisualizzaPerProvenienza} (CU 33)
+  \item \texttt{VisualizzaPerEtà} (CU 34)
+  \item \texttt{VisualizzaPerSesso} (CU 35)
+\end{itemize}
+\medskip
+Gli attori coinvolti in questi casi d'uso sono l' \emph{Operatore al pubblico} per la popolazione dei dati sui quali inferire le statistiche e  l' \emph{Amministrazione} per la visualizzazione delle stesse.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{Gestione Statistiche}
+    \caption{diagramma dei casi d'uso: \textbf{Gestione Statistiche}}
+    \label{fig:GestioneStatistiche}
+\end{figure}
+
+\newpage
+
+\section*{InserisciDatiCliente (CU 28)}
+	
+\indent\indent Questo caso d'uso consente di inserire i dati del cliente al momento dell'acquisto del biglietto.
+	
+	\paragraph{Attori primari:}Operatore al pubblico.
+	
+	\paragraph{Attori secondari:}Cliente.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+		\item Nel caso in cui il cliente disponga di un abbonamento, l'attore primario ha inserito nel sistema l'identificativo dell'abbonamento eseguendo una scannerizzazione del codice QR.
+	\end{enumerate}
+
+	\paragraph{Postcondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha memorizzato i dati inseriti in forma anonima.
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi principale:}
+
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item Il caso d'uso inizia quando l'attore primario vuole memorizzare i dati di un cliente. 
+	    \item \texttt{\textbf{if}} il cliente dispone di un abbonamento:
+			\begin{enumerate}	[leftmargin=28pt]
+			\item Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?)
+			\item \texttt{{include(RicercaAbbonamento)}}
+  			\end{enumerate}
+  		\item \texttt{\textbf{else}}:
+  		\begin{enumerate}	[leftmargin=28pt]
+	        \item L'attore primario chiede al cliente i dati necessari.
+	        \item L'attore primario inserisce i dati nel sistema.
+	    \end{enumerate}
+		\item Il sistema memorizza i dati.
+		\item Il sistema produce un messaggio con l'esito dell'operazione.
+	
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
+		\begin{enumerate}[itemsep=8pt,parsep=0pt]
+				\item La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
+				\item L'attore secondario si rifiuta di fornire le informazioni.
+				\item L'attore primario annulla l'operazione.
+				\item Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
+		\end{enumerate}
+
+
+
+
+
+	
+	
+\newpage	
+\section*{InserisciProvenienza (CU 29)}
+	
+	\indent\indent Questo caso d'uso consente di inserire lo Stato di nascita del cliente.
+	
+	\paragraph{Id padre:}(CU 28)
+	
+	\paragraph{Attori primari:}Operatore al pubblico.
+	
+	\paragraph{Attori secondari:}Cliente.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+		\item Nel caso in cui il cliente disponga di un abbonamento, l'attore primario ha inserito nel sistema l'identificativo dell'abbonamento eseguendo una scannerizzazione del codice QR.
+	\end{enumerate}
+
+	\paragraph{Postcondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha memorizzato i dati inseriti in forma anonima.
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi principale:}
+
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare il Paese d'origine del cliente. 
+	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
+			\begin{enumerate}	[leftmargin=28pt]
+			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si
+			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
+  			\end{enumerate}
+  		\item(3.) \texttt{\textbf{else}}:
+  		\begin{enumerate}	[leftmargin=28pt]
+	        \item(o3.1) L'attore primario chiede al cliente il suo Paese d'origine.
+	        \item(o3.2.) L'attore primario inserisce il Paese d'origine del cliente nel sistema.
+	    \end{enumerate}
+		\item(4.) Il sistema memorizza i dati.
+		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
+	
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
+		\begin{enumerate}[itemsep=8pt,parsep=0pt]
+				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
+				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione del suo Paese di origine.
+				\item (3.) L'attore primario annulla l'operazione.
+				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
+		\end{enumerate}
+	
+
+
+
+	
+\newpage	
+\section*{InserisciEtà (CU 30)}
+	
+	\indent\indent Questo caso d'uso consente di inserire l'età del cliente.
+	
+	\paragraph{Id padre:} (CU 28)
+	
+	\paragraph{Attori primari:}Operatore al pubblico.
+	
+	\paragraph{Attori secondari:}Cliente.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+		\item Nel caso in cui il cliente disponga di un abbonamento, l'attore primario ha inserito nel sistema l'identificativo dell'abbonamento eseguendo una scannerizzazione del codice QR.
+	\end{enumerate}
+
+	\paragraph{Postcondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha memorizzato i dati inseriti in forma anonima.
+	\end{enumerate}
+
+	\paragraph{Sequenza eventi principale:}
+
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare la data di nascita del cliente. 
+	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
+			\begin{enumerate}	[leftmargin=28pt]
+			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si 
+			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
+  			\end{enumerate}
+  		\item(3.) \texttt{\textbf{else}}:
+  		\begin{enumerate}	[leftmargin=28pt]
+	        \item(o3.1) L'attore primario chiede al cliente la sua data di nascita.
+	        \item(o3.2.) L'attore primario inserisce la data di nascita del cliente nel sistema.
+	    \end{enumerate}
+		\item(4.) Il sistema memorizza i dati.
+		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
+	\end{enumerate}
+
+	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
+		\begin{enumerate}[itemsep=8pt,parsep=0pt]
+				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
+				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione della sua data di nascita.
+				\item (3.) L'attore primario annulla l'operazione.
+				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
+		\end{enumerate}
+	
+
+
+
+	
+\newpage
+\section*{InserisciSesso (CU 31)}
+	
+	\indent\indent Questo caso d'uso consente di inserire il genere del cliente.
+	
+	\paragraph{Id padre:} (CU 28)
+	
+	\paragraph{Attori primari:}Operatore al pubblico.
+	
+	\paragraph{Attori secondari:}Cliente.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+		\item Nel caso in cui il cliente disponga di un abbonamento, l'attore primario ha inserito nel sistema l'identificativo dell'abbonamento eseguendo una scannerizzazione del codice QR.
+	\end{enumerate}
+
+	\paragraph{Postcondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha memorizzato i dati inseriti in forma anonima.
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi principale:}
+
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item(o1) Il caso d'uso inizia quando l'attore primario vuole memorizzare il genere del cliente. 
+	    \item(2.) \texttt{\textbf{if}} il cliente dispone di un abbonamento:
+			\begin{enumerate}	[leftmargin=28pt]
+			\item (2.1.) Il sistema recupera i dati necessari dal suo abbonamento. %(Che già ha perché ha preso il suo abbonamento giusto?) Si
+			\item (2.2.) \texttt{{include(RicercaAbbonamento)}}
+  			\end{enumerate}
+  		\item(3.) \texttt{\textbf{else}}:
+  		\begin{enumerate}	[leftmargin=28pt]
+	        \item(o3.1) L'attore primario chiede al cliente il suo genere. % :D
+	        \item(o3.2.) L'attore primario inserisce il genere del cliente nel sistema.
+	    \end{enumerate}
+		\item(4.) Il sistema memorizza i dati.
+		\item(5.) Il sistema produce un messaggio con l'esito dell'operazione.
+	\end{enumerate}
+	
+	\paragraph{Sequenza eventi alternativa: \emph{DatiNonFornitiDalCliente}}
+		\begin{enumerate}[itemsep=8pt,parsep=0pt]
+				\item (1.) La sequenza di eventi alternativa inizia dopo il passo 3.1. della sequenza di eventi principale.
+				\item (o2.) L'attore secondario si rifiuta di fornire l'informazione del suo genere.
+				\item (3.) L'attore primario annulla l'operazione.
+				\item (4.) Il sistema termina l'operazione senza memorizzare alcun dato riguardante il cliente.
+		\end{enumerate}
+	
+	
+
+
+\newpage	
+\section*{VisualizzaStatistiche (CU 32)}
+	
+	\indent\indent Questo caso d'uso consente di generare statistiche in un particolare mese sulla base dei dati sui clienti raccolti in forma anonima dal sistema.
+	
+	\paragraph{Attori primari:}Anmministrazione.
+	
+	\paragraph{Attori secondari:}Nessuno.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+	\end{enumerate}
+	
+	\paragraph{Postcondizioni:}Nessuna.
+	
+	\paragraph{Sequenza eventi principale:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
+		\item Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
+		\item \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item Il sistema utilizza il mese inserito come criterio di ricerca.
+  			\end{enumerate}	
+		\item \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item Il sistema utilizza il mese corrente come criterio di ricerca.
+  			\end{enumerate}
+
+		\item \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
+		    \begin{enumerate}	[leftmargin=28pt]
+				\item \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
+					\begin{enumerate}	[leftmargin=28pt]
+						\item Il sistema aggiunge il dato sul cliente alla lista dei dati raccolti.
+		  			\end{enumerate}	
+  		    \end{enumerate}
+
+	    \item Il sistema organizza i dati sulla base dei quali genera un grafico e lo mostra a schermo.
+	    \item Il sistema calcola deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
+	    \item Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
+	\end{enumerate}
+	
+		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
+	\begin{enumerate}	[leftmargin=28pt]
+			\item  La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
+			\item  Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
+		\end{enumerate}
+	
+
+
+
+
+
+\newpage
+\section*{VisualizzaPerProvenienza (CU 33)}
+	
+	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
+	
+	\paragraph{Id padre:} (CU 32)
+	
+	\paragraph{Attori primari:}Anmministrazione.
+	
+	\paragraph{Attori secondari:}Nessuno.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+	\end{enumerate}
+	
+	\paragraph{Postcondizioni:}Nessuna.
+	
+	\paragraph{Sequenza eventi principale:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
+		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
+		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
+  			\end{enumerate}	
+		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
+  			\end{enumerate}
+
+		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
+		    \begin{enumerate}	[leftmargin=28pt]
+				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
+					\begin{enumerate}	[leftmargin=28pt]
+						\item (o5.1.1.) Il sistema aggiunge il Paese di origine del cliente alla lista dei dati raccolti.
+		  			\end{enumerate}	
+  		    \end{enumerate}
+
+	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico a torta e lo mostra a schermo.
+	    \item (7.) Il sistema calcola la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
+	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
+	\end{enumerate}
+	
+		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
+	\begin{enumerate}	[leftmargin=28pt]
+			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
+			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
+		\end{enumerate}
+	
+	
+
+
+
+
+\newpage	
+\section*{VisualizzaPerEtà (CU 34)}
+	
+	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
+	
+	\paragraph{Id padre:} (CU 32)
+	
+	\paragraph{Attori primari:}Anmministrazione.
+	    
+	\paragraph{Attori secondari:}Nessuno.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+	\end{enumerate}
+	
+	\paragraph{Postcondizioni:}Nessuna.
+	
+	\paragraph{Sequenza eventi principale:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
+		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
+		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
+  			\end{enumerate}	
+		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
+  			\end{enumerate}
+
+		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
+		    \begin{enumerate}	[leftmargin=28pt]
+				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
+					\begin{enumerate}	[leftmargin=28pt]
+						\item (o5.1.1) Il sistema raccoglie la data di nascita del cliente e la utilizza per calcolare l'età.
+						\item (5.1.2.) Il sistema aggiunge l'età del cliente alla lista dei dati raccolti.
+		  			\end{enumerate}	
+  		    \end{enumerate}
+
+	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico istogramma e lo mostra a schermo.
+	    \item (o7.) Il sistema calcola la media campionaria e la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
+	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
+	\end{enumerate}
+	
+		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
+	\begin{enumerate}	[leftmargin=28pt]
+			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
+			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
+		\end{enumerate}
+
+
+
+
+	
+	
+\newpage
+\section*{VisualizzaPerSesso (CU 35)}
+	
+	Questo caso d'uso consente di eseguire la ricerca di un abbonamento all'interno del database.
+	
+	\paragraph{Id padre:} (CU 32)
+	
+	\paragraph{Attori primari:}Anmministrazione.
+	
+	\paragraph{Attori secondari:}Nessuno.
+	
+	\paragraph{Precondizioni:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+		\item Il sistema ha autenticato l'attore primario.
+	\end{enumerate}
+	
+	\paragraph{Postcondizioni:}Nessuna.
+
+	\paragraph{Sequenza eventi principale:}
+	\begin{enumerate}[itemsep=8pt,parsep=0pt]
+	    \item (1.) Il caso d'uso inizia quando l'attore primario vuole visualizzare le statistiche. 
+		\item (2.) Il sistema chiede all'attore primario il mese nel quale desidera generare le statistiche.
+		\item (3.) \texttt{\textbf{if}} l'attore primario inserisce un mese antecedente il mese corrente:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (3.1.) Il sistema utilizza il mese inserito come criterio di ricerca.
+  			\end{enumerate}	
+		\item (4.) \texttt{\textbf{else if}} l'attore primario non inserisce alcuna data:
+			\begin{enumerate}	[leftmargin=28pt]
+				\item (4.1.) Il sistema utilizza il mese corrente come criterio di ricerca.
+  			\end{enumerate}
+
+		\item (5.) \texttt{\textbf{for each}} dato sul cliente nel database dei dati sui clienti:
+		    \begin{enumerate}	[leftmargin=28pt]
+				\item (5.1.) \texttt{\textbf{if}} il dato sul cliente è stato registrato nel sistema nel mese selezionato:
+					\begin{enumerate}	[leftmargin=28pt]
+						\item (o5.1.1.) Il sistema aggiunge il genere del cliente alla lista dei dati raccolti.
+		  			\end{enumerate}	
+  		    \end{enumerate}
+
+	    \item (o6.) Il sistema organizza i dati sulla base dei quali genera un grafico a torta e lo mostra a schermo.
+	    \item (7.) Il sistema calcola la deviazione standard campionaria sulla base dei dati raccolti e mostra a schermo i risultati.
+	    \item (8.) Il sistema mostra a schermo anche il numero di visite avvenute dall'inizio del mese, fino al momento della richiesta. %(potrebbe essere inserito anche nel punto precedente)
+	\end{enumerate}
+	
+		\paragraph{Sequenza eventi alternativa: \textit{NessunDato}}
+	\begin{enumerate}	[leftmargin=28pt]
+			\item  (1.) La sequenza di eventi alternativa inizia dopo il passo 6. della sequenza di eventi principale.
+			\item  (2.) Il sistema mostra un opportuno messaggio di errore informando l'attore primario dell'assenza di dati sui clienti nel mese selezionato.
+		\end{enumerate}
 
 
 \end{document}
