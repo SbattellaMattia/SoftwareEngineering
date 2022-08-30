@@ -317,7 +317,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 	
 	\paragraph{Precondizioni:} 
 		\begin{enumerate}[itemsep=8pt,parsep=0pt]
-			\item Si è verificata la volonta da parte del cliente di acquistare un biglietto.
+			\item Si è verificata la volontà da parte del cliente di acquistare un biglietto.
 		\end{enumerate}
 
 	
@@ -333,14 +333,14 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
     \item   \texttt{\textbf{if}} l'attore secondario chiede di utilizzare il privilegio sull'età :
         \begin{enumerate}[itemsep=8pt,parsep=0pt]
 		\item L'attore primario chiede all'attore secondario di mostrare un documento d'identità.
-			\item   \texttt{\textbf{if}} L'età dell'attore secondario è maggiore di 5 anni \texttt{\textbf{and}} minore di 18 anni \texttt{\textbf{or}} è maggiore di 60 anni : 
-			        \begin{enumerate}[itemsep=8pt,parsep=0pt]
-						\item L'attore primario conferma l'aderenza alla tariffa ridotta.
-					\end{enumerate}
-
-			\item   \texttt{\textbf{else if}} L'età dell'attore secondario è minore o aguale a 5 anni:
+			\item   \texttt{\textbf{if}}L'età dell'attore secondario è minore o aguale a 5 anni: 
 			        \begin{enumerate}[itemsep=8pt,parsep=0pt]
 						\item L'attore primario conferma l'esenza dal pagamento.
+					\end{enumerate}
+
+			\item   \texttt{\textbf{else if}} L'età dell'attore secondario è minore di 18 anni \texttt{\textbf{or}} è maggiore di 59 anni:
+			        \begin{enumerate}[itemsep=8pt,parsep=0pt]
+						\item L'attore primario conferma l'aderenza alla tariffa ridotta.
 					\end{enumerate}
         \end{enumerate}
 
