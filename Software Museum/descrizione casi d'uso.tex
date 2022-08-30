@@ -25,15 +25,15 @@
 
 \section{Diagrammi dei casi d'uso}
 
-Seguono ora i 5 \emph{packages} del diagramma dei casi d'uso e per ciasucuno di essi una dettagliata descrizionie dei casi d'uso presenti. Per rendere il più possibile comoda la lettura da parte del lettore, gli autori hanno scelto di ordinare la descrizione dei casi d'uso secondo il loro identificativo numerico crescente. Tale identificativo è stato riportato anche sulle rappresentazioni grafiche dei packages. 
+\indent \indent Seguono ora i diagrammi dei casi d'uso e per ciasucuno di essi una dettagliata descrizione dei casi d'uso presenti. Per rendere il più possibile comoda la lettura da parte del lettore, gli autori hanno scelto di ordinare la descrizione dei casi d'uso secondo il loro identificativo numerico crescente. Tale identificativo è stato riportato anche sulle rappresentazioni grafiche dei diagrammi. 
 
 \medskip
 
-Si tenga inoltre presente che, al fine di non appesantire le rappresentazioni grafiche dei casi d'uso, sono state omesse le relazioni di associazione tra attore e caso d'uso qualora esse fossero state già esplicitate in altri \emph{packages} e ripeterle nell'attuale non avrebbe contribuito in modo indispensabile alla comprensione della logica del sistema. Sempre nel perseguimento di tale scopo si è scelto di colorare in grigio i casi d'uso presenti in un \emph{package}, ma originari di un'altro \emph{package}.
+Si tenga inoltre presente che, al fine di non appesantire le rappresentazioni grafiche, sono state omesse le relazioni di associazione tra attore e caso d'uso qualora esse fossero state già esplicitate in altri diagrammi e ripeterle nell'attuale non avrebbe contribuito in modo indispensabile alla comprensione della logica del sistema. Sempre nel perseguimento di tale scopo si è scelto di colorare in grigio i casi d'uso presenti in un diagramma, ma originari di un'altro diagramma.
 
 \medskip
 
- Il diagramma dei casi d'uso è composto da 5 \emph{packages} oltre al package degli attori, nel dettaglio essi sono:
+ Il diagramma dei casi d'uso è composto da 5 \emph{packages} oltre al \emph{package} degli attori; nel dettaglio essi sono:
 
 \medskip
 \begin{itemize}[itemsep=0pt]
@@ -43,12 +43,6 @@ Si tenga inoltre presente che, al fine di non appesantire le rappresentazioni gr
   \item \texttt{Gestione Sistema} (CU 24) - (CU 27)
   \item \texttt{Gestione Statistiche} (CU 28) - (CU 35)
 \end{itemize}
-
-\medskip
-Gli attori coinvolti in questi casi d'uso sono il \emph{Cliente non abbonato} e il \emph{Cliente abbonato}, generalizzati nell'attore \emph{Cliente}, e l'attore \emph{Operatore al pubblico}.
-
-\medskip
-Si noti che, poiché questo sistema informatico non prevede terminali sui quali il cliente può interfacciarsi direttamente, i casi d'uso istanziabili dal cliente hanno come attore secondario l'operatore al pubblico, il quale, una volta compresa la necessità del cliente, avvia la procedura interfacciandosi con il sistema.
 
 \begin{figure}[h]
     \centering
@@ -61,12 +55,13 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 
 \newpage
 
-\indent\indent Il package degli attori... .Nel dettagio essi sono:
+\section{Gestione Cliente}
+
+\indent\indent Il package degli attori contiene i 'soggetti' del dominio del problema in esame, ovvero coloro che interagiranno con il presente sistema al fine di svolgere il loro lavoro. Nel dettaglio i 6 attori sono:
 
 \medskip
 \begin{itemize}[itemsep=0pt]
   \item \texttt{Cliente}
-  \item \texttt{Cliente non abbonato}
   \item \texttt{Cliente abbonato}
   \item \texttt{Operatore al pubblico}
   \item \texttt{Segreteria}
@@ -75,7 +70,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 \end{itemize}
 
 \medskip
-Gli attori coinvolti in questi casi d'uso sono il \emph{Cliente non abbonato} e il \emph{Cliente abbonato}, generalizzati nell'attore \emph{Cliente}, e l'attore \emph{Operatore al pubblico}.
+Si noti la relazione di generalizzazione che prende posto tra l'attore \emph{Cliente} e l'attore \emph{Cliente abbonato}. Mentre del secondo il sistema possiede le informazioni anagrafiche lasciate al momento della sua registrazione, non possiede che dati in forma anonima del \emph{Cliente}, ovvero di colui che usufruisce dei servizi offerti dal museo senza essere in possesso di un abbonamento. In altre parole, poiché il presente sistema non obbliga il \emph{Cliente} a registrarsi per accedere alla struttura e usufruire dei suoi servizi, gli unici dati che il sistema memorizza su di lui sono quelli (facoltativi) rilasciati in forma anonima per le statistiche.
 
 \begin{figure}[h]
     \centering
@@ -155,7 +150,7 @@ Si noti che, poiché questo sistema informatico non prevede terminali sui quali 
 		\item \texttt{\textbf{if}} l'attore primario vuole accedere alla mostra:
 			\begin{enumerate}	[leftmargin=28pt]
 				\item L'attore secondario seleziona la mostra attuale.
-				\item \texttt{{include(RicercaMostra)}}.
+				%\item \texttt{{include(RicercaMostra)}}.
   			\end{enumerate}	
 
 		\item L'attore secondario inserisce nel sistema i dati relativi alla tipologia del biglietto.
@@ -1270,6 +1265,7 @@ L'attore coinvolto in questi casi d'uso è la \emph{Segreteria}.
   \item \texttt{CUDOpera} (CU 21)
   \item \texttt{RicercaOpera} (CU 22)
   \item \texttt{GeneraReportIncassi} (CU 23)
+  \item \texttt{GestisciDipendenti} (CU 36)
 \end{itemize}
 \medskip
 Gli attori coinvolti in questi casi d'uso sono l' \emph{Amministrazione} e il \emph{Cliente abbonato}.
