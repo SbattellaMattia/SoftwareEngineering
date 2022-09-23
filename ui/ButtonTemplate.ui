@@ -6,26 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>295</width>
-    <height>169</height>
+    <width>640</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Home</string>
-  </property>
-  <property name="windowOpacity">
-   <double>1.000000000000000</double>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>40</y>
-      <width>221</width>
+      <x>180</x>
+      <y>360</y>
+      <width>241</width>
       <height>61</height>
      </rect>
     </property>
@@ -37,25 +31,25 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
- background-color: rgb(124, 203, 255);
+ background-color:rgb(104, 194, 253);
  border-style: solid;
- border-width:3px;
- border-radius:28px;
- border-color: rgb(19, 171, 255);
+ border-radius:30px;
 color: rgb(255, 255, 255);
 font: 18pt &quot;Candara&quot;;
 }
 
 QPushButton::hover{
-	 border-radius:22px;
- background-color:rgb(106, 175, 218);
+
+    background-color:rgb(106, 175, 218);
 	border-color : rgb(15, 138, 204);
 	color: white;
 }
 
 QPushButton::pressed{
+	border-color:rgb(104, 194, 253);
+	border-width:3;
 	background-color : white;
-	color: rgb(124, 203, 255);
+	color:rgb(104, 194, 253);
 }
 </string>
     </property>
@@ -69,7 +63,7 @@ QPushButton::pressed{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>295</width>
+     <width>640</width>
      <height>21</height>
     </rect>
    </property>
