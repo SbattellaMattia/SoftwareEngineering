@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>317</width>
+    <height>231</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>50</y>
+     <width>125</width>
+     <height>125</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background-color: rgb(255, 249, 190);
+border-radius:18;
+border-color: rgb(244, 233, 140);
+border-width:7;
+border-style: solid;
+}
+
+QLabel:hover{
+background-color: rgb(244, 233, 140);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="BigButtonTemplate.qrc">:/icon/confirmation_number_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="margin">
+    <number>17</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="BigButtonTemplate.qrc"/>
+  <include location="../../../../../Program Files (x86)/Qt Designer/BigButtonTemplate.qrc"/>
+ </resources>
+ <connections/>
+</ui>
