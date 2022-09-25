@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>563</height>
+    <width>487</width>
+    <height>775</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,67 +23,33 @@ border-width:7;
 }
 QLabel{
 border-width:0;
+font: 18pt &quot;Lato Light&quot;;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>593</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
+      <x>0</x>
+      <y>44</y>
+      <width>641</width>
+      <height>5</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#ee8888;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ae4a4a;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ae4a4a;
-	border-width:3;
-}
-</string>
+     <string notr="true">background-color:rgb(104, 194, 253);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>563</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
+      <x>384</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -94,59 +60,8 @@ QPushButton::pressed{
     </property>
     <property name="minimumSize">
      <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#fff08c	;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ccc664;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ccc664;
-	border-width:3;
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>533</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
+      <width>22</width>
+      <height>22</height>
      </size>
     </property>
     <property name="maximumSize">
@@ -162,7 +77,7 @@ QPushButton::pressed{
      <string notr="true">QPushButton{
  background-color:#76ff85;
  border-style: solid;
- border-radius:12px;
+ border-radius:11px;
 font: 18pt &quot;Candara&quot;;
 border-color:#6bcc73;
 border-width:3;
@@ -179,35 +94,170 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>44</y>
-      <width>641</width>
-      <height>6</height>
+      <x>440</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(104, 194, 253);</string>
+     <string notr="true">QPushButton{
+ background-color:#ee8888;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ae4a4a;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ae4a4a;
+	border-width:3;
+}
+</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#fff08c	;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ccc664;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ccc664;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>424</x>
+      <y>57</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res/res.qrc">:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titoloLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>57</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+text-align: left;
+background-color: rgba(255, 255, 255,0);
+color: #1684FC;
+font: 16pt &quot;Lato&quot;;</string>
+    </property>
+    <property name="text">
+     <string>VendiOpera ➜ Opera</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>640</width>
-     <height>35</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+  <include location="res/res.qrc"/>
+ </resources>
  <connections/>
 </ui>
