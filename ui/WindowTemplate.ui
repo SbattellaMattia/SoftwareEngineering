@@ -23,7 +23,19 @@ border-width:7;
 }
 QLabel{
 border-width:0;
-font: 18pt &quot;Lato Light&quot;;
+font: 20pt &quot;Lato Light&quot;;
+}
+QLineEdit{
+border-width:0;
+font: 14pt &quot;Lato Light&quot;;
+}
+QAbstractItemView {
+    border: 3px solid  rgb(104, 194, 253);  
+border-radius:8px;
+  selection-background-color:  rgb(104, 194, 253);
+margin:-2px;
+text-align:center;
+border-width:5;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -43,7 +55,7 @@ font: 18pt &quot;Lato Light&quot;;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
       <x>384</x>
@@ -94,7 +106,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -145,7 +157,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
       <x>412</x>
@@ -208,7 +220,7 @@ QPushButton::pressed{
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>20</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -251,6 +263,26 @@ font: 16pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
      <string>VendiOpera ➜ Opera</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeAllCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255,0);
+background-color:rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
