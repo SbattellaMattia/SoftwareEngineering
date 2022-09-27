@@ -257,7 +257,7 @@ QPushButton::pressed{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="res/res.qrc">:/icons/search_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap resource="ui MIO/res/res.qrc">:/icons/search_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -294,7 +294,7 @@ QPushButton::pressed{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="res/res.qrc">:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap resource="ui MIO/res/res.qrc">:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -431,19 +431,30 @@ QPushButton::pressed{
      <string>Ricerca</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="meseLineEdit">
+   <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>278</x>
-      <y>167</y>
-      <width>160</width>
+      <x>283</x>
+      <y>166</y>
+      <width>150</width>
       <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-style: solid;
-border-radius:15px;
-border-color: rgb(255, 255, 255);</string>
+     <string notr="true">QLineEdit{
+background:rgb(255, 255, 255);
+border-radius:8px;
+border-color:rgb(104, 194, 253);
+border-style: solid;
+border-width:0;
+}
+QLineEdit::focus{
+background:rgb(255, 255, 255);
+border-radius:8px;
+border-color:rgb(104, 194, 253);
+border-style: solid;
+border-width:3;
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -458,7 +469,7 @@ border-color: rgb(255, 255, 255);</string>
   </widget>
  </widget>
  <resources>
-  <include location="res/res.qrc"/>
+  <include location="ui MIO/res/res.qrc"/>
  </resources>
  <connections/>
 </ui>
