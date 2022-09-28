@@ -1,11 +1,12 @@
 import ctypes
+import os
 import sys
 
 from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
-import res
+import myRes
 
 
 class ButtonTemplate(QMainWindow):
@@ -13,10 +14,21 @@ class ButtonTemplate(QMainWindow):
         super().__init__()
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
         loadUi('ui/VendiOpera.ui',self)
+        # a quanto pare questo trucchetto richiede la versione 5 di pyqt
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground,True)
         self.setWindowIcon(QtGui.QIcon('ico/museum.ico'))
         self.exitButton.clicked.connect(self.close)
         self.reduceButton.clicked.connect(self.showMinimized)
+
+        # ATTENZIONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        # dopo tantissimo try&error ho scoperto che gli errori di rendering sono dovuti
+        # alle seguenti cose:
+        # • la superclasse DEVE essere la stessa classe dell'elemento alla radice del .ui
+        # • il CSS nell'elemento radice CAUSA UN MACELLO DI PROBLEMI!
+        #   PERSINO COMMENTARLO NON RISOLVE, DEVE ESSERE PROPRIO TOLTO!
+        #   ce lo rimettiamo poi nel file qui sotto, ora funziona tutto.
+        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        self.setStyleSheet(open('ui/css/main.css','r').read())
         # self.immagineLabel.setMargin(12)
 
     def keyPressEvent(self, e):
@@ -39,8 +51,8 @@ class ButtonTemplate(QMainWindow):
 
 if __name__ == "__main__":
 
-    myappid = 'museum.1.0'
-    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+    # myappid = 'museum.1.0'
+    # ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
     app = QApplication(sys.argv)
     mainWidget = ButtonTemplate()
