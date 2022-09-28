@@ -6,14 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>648</width>
-    <height>440</height>
+    <width>507</width>
+    <height>342</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <kerning>false</kerning>
-   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -28,67 +23,45 @@ border-width:7;
 }
 QLabel{
 border-width:0;
+font: 20pt &quot;Lato Light&quot;;
+}
+QLineEdit{
+border-width:0;
+font: 14pt &quot;Lato Light&quot;;
+}
+QAbstractItemView {
+    border: 3px solid  rgb(104, 194, 253);  
+border-radius:8px;
+  selection-background-color:  rgb(104, 194, 253);
+margin:-2px;
+text-align:center;
+border-width:5;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>593</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
+      <x>0</x>
+      <y>44</y>
+      <width>641</width>
+      <height>5</height>
      </rect>
     </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#ee8888;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ae4a4a;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ae4a4a;
-	border-width:3;
-}
-</string>
+     <string notr="true">background-color:rgb(104, 194, 253);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>563</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
+      <x>402</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -99,59 +72,8 @@ QPushButton::pressed{
     </property>
     <property name="minimumSize">
      <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#fff08c	;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ccc664;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ccc664;
-	border-width:3;
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>533</x>
-      <y>16</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
+      <width>22</width>
+      <height>22</height>
      </size>
     </property>
     <property name="maximumSize">
@@ -167,7 +89,7 @@ QPushButton::pressed{
      <string notr="true">QPushButton{
  background-color:#76ff85;
  border-style: solid;
- border-radius:12px;
+ border-radius:11px;
 font: 18pt &quot;Candara&quot;;
 border-color:#6bcc73;
 border-width:3;
@@ -184,17 +106,103 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>44</y>
-      <width>641</width>
-      <height>6</height>
+      <x>458</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(104, 194, 253);</string>
+     <string notr="true">QPushButton{
+ background-color:#ee8888;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ae4a4a;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ae4a4a;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="maximizeButton">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#fff08c	;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ccc664;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ccc664;
+	border-width:3;
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -203,18 +211,18 @@ QPushButton::pressed{
    <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>60</y>
-      <width>121</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel{
-color: rgb(22, 132, 252);
-font: 10pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font-size: 20px;
+text-align: left;
 background-color: rgba(255, 255, 255,0);
-}</string>
+color: #1684FC;
+font: 16pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
      <string>Home</string>
@@ -223,9 +231,9 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>110</y>
-      <width>431</width>
+      <x>10</x>
+      <y>94</y>
+      <width>491</width>
       <height>51</height>
      </rect>
     </property>
@@ -236,14 +244,49 @@ background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
     <property name="text">
-     <string>Benvenuti! Chi desisdera accedere?</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Benvenuti! Chi desisdera accedere?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>290</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato-light</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color: rgba(255, 250, 223,0);
+left: 244px;
+top: 414px;
+width: 119px;
+height: 19px;
+color: rgba(16, 16, 16,200);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;
+}</string>
+    </property>
+    <property name="text">
+     <string>Operatore al pubblico</string>
     </property>
    </widget>
    <widget class="QLabel" name="operatoreAlPubblico">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>180</y>
+      <x>27</x>
+      <y>160</y>
       <width>125</width>
       <height>125</height>
      </rect>
@@ -281,53 +324,11 @@ background-color: rgb(244, 233, 140);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="segreteria">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>180</y>
-      <width>125</width>
-      <height>125</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color:rgb(183, 255, 186);
-border-radius:18;
-border-color:rgb(145, 234, 161);
-border-width:7;
-border-style: solid;
-}
-
-QLabel:hover{
-background-color: rgb(145, 234, 161);
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/fax_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="margin">
-     <number>17</number>
-    </property>
-   </widget>
    <widget class="QLabel" name="amministrazione">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>180</y>
+      <x>353</x>
+      <y>160</y>
       <width>125</width>
       <height>125</height>
      </rect>
@@ -365,43 +366,11 @@ background-color: rgb(170, 217, 249);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>310</y>
-      <width>161</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato-light</family>
-      <pointsize>-1</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgba(255, 250, 223,0);
-left: 244px;
-top: 414px;
-width: 119px;
-height: 19px;
-color: rgba(16, 16, 16,200);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;
-}</string>
-    </property>
-    <property name="text">
-     <string>Operatore al pubblico</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>310</y>
+      <x>215</x>
+      <y>290</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -410,6 +379,9 @@ font-family: Lato-light;
      <font>
       <family>Lato-light</family>
       <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -429,11 +401,53 @@ font-family: Lato-light;
      <string>Segreteria</string>
     </property>
    </widget>
+   <widget class="QLabel" name="segreteria">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>125</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color:rgb(183, 255, 186);
+border-radius:18;
+border-color:rgb(145, 234, 161);
+border-width:7;
+border-style: solid;
+}
+
+QLabel:hover{
+background-color: rgb(145, 234, 161);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/fax_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="margin">
+     <number>17</number>
+    </property>
+   </widget>
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>310</y>
+      <x>356</x>
+      <y>290</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -442,6 +456,9 @@ font-family: Lato-light;
      <font>
       <family>Lato-light</family>
       <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -462,18 +479,10 @@ font-family: Lato-light;
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>648</width>
-     <height>40</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+  <include location="res/res.qrc"/>
+ </resources>
  <connections/>
 </ui>
