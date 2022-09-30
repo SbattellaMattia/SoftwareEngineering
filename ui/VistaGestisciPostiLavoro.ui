@@ -446,10 +446,19 @@ background-color: #b6e9ff;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>110</y>
+      <y>104</y>
       <width>551</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">left: 849px;
@@ -460,7 +469,6 @@ height: 24px;
 color: rgba(16, 16, 16);
 font-size: 18px;
 text-align: center;
-font-family: Lato-light;
 </string>
     </property>
     <property name="text">
@@ -488,7 +496,7 @@ background-color: rgba(255, 255, 255,0);
 color: rgba(16, 16, 16);
 font-size: 18px;
 text-align: center;
-font-family: Lato-light;</string>
+</string>
     </property>
     <property name="text">
      <string>Receptions</string>
@@ -663,7 +671,7 @@ background-color: rgba(255, 255, 255,0);
 color: rgba(16, 16, 16);
 font-size: 18px;
 text-align: center;
-font-family: Lato-light;</string>
+</string>
     </property>
     <property name="text">
      <string>Segreterie</string>
@@ -879,7 +887,7 @@ background-color: rgba(255, 255, 255,0);
 color: rgba(16, 16, 16);
 font-size: 18px;
 text-align: center;
-font-family: Lato-light;</string>
+</string>
     </property>
     <property name="text">
      <string>Amministrazioni</string>
