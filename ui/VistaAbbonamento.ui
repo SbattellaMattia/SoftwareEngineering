@@ -297,7 +297,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -334,7 +334,7 @@ font-family: Arial;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -495,7 +495,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/person_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/person_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -536,7 +536,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/account_circle_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/account_circle_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -577,7 +577,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/badge_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/badge_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -719,7 +719,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/calendar_month_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/calendar_month_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

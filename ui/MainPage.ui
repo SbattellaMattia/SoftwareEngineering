@@ -239,7 +239,7 @@ font: 16pt &quot;Lato&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-font: 25 18pt &quot;Dubai Light&quot;;
+font: 25 18pt &quot;Lato Light&quot;;
 background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
@@ -315,7 +315,7 @@ background-color: rgb(244, 233, 140);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/theater_comedy_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/theater_comedy_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -357,7 +357,7 @@ background-color: rgb(170, 217, 249);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/shield_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/shield_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -434,7 +434,7 @@ background-color: rgb(145, 234, 161);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/fax_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/fax_FILL1_wght500_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

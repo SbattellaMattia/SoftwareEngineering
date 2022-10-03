@@ -208,43 +208,6 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>424</x>
-      <y>57</y>
-      <width>36</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
@@ -297,7 +260,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/account_circle_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/account_circle_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -388,7 +351,7 @@ background-color: rgb(244, 233, 140);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/workspace_premium_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/workspace_premium_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -528,7 +491,7 @@ background-color: rgb(145, 234, 161);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/verified_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/verified_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -570,7 +533,7 @@ background-color: rgb(170, 217, 249);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/volunteer_activism_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/volunteer_activism_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -612,7 +575,7 @@ background-color: rgb(190, 166, 244);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/refresh_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/refresh_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

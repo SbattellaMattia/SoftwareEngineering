@@ -317,7 +317,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -388,7 +388,7 @@ font-family: Arial;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../PycharmProjects/SoftwareEngineering/png/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
