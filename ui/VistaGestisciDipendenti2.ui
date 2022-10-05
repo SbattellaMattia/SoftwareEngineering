@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>706</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background:rgb(255, 255, 255);
+border-radius:26px;
+border-color:rgb(104, 194, 253);
+border-style: solid;
+border-width:7;
+}
+QLabel{
+border-width:0;
+font: 18pt &quot;Lato Light&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>44</y>
+      <width>641</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(104, 194, 253);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#76ff85;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#6bcc73;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#6bcc73;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#ee8888;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ae4a4a;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ae4a4a;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>15</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#fff08c	;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ccc664;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ccc664;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="indietroLabel">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>60</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res/res.qrc">:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="percorsoLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>57</y>
+      <width>461</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+text-align: left;
+background-color: rgba(255, 255, 255,0);
+color: #1684FC;
+font: 14pt &quot;Lato&quot;;</string>
+    </property>
+    <property name="text">
+     <string>ModificaTurnoGuida ➜ GestisciDipendenti</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titoloLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 802px;
+top: 386px;
+width: 307px;
+height: 19px;
+color: rgba(16, 16, 16);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titoloLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 849px;
+background-color: rgba(255, 255, 255,0);
+top: 359px;
+width: 212px;
+height: 24px;
+color: rgba(16, 16, 16);
+font-size: 20px;
+text-align: center;
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco la lista delle guide del museo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="immagineLabel">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>185</y>
+      <width>521</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 737px;
+top: 416px;
+width: 436px;
+height: 377px;
+line-height: 20px;
+border-radius: 22px;
+background-color: rgba(182, 233, 255);
+text-align: center;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+    <property name="indent">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>501</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background:rgb(255, 255, 255);
+border-radius:0px;
+border-color:#b6e9ff;
+border-style: solid;
+border-width:7;
+}
+
+
+QScrollArea{
+border-width:0px;
+border-radius: 22px;
+background-color: rgba(255, 255, 255, 255);
+}
+
+QScrollBar{
+border-width:0px;
+	border-radius:4px;
+background-color: rgba(255, 255, 255, 255);
+
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    width: 14px;
+    margin: 0px 0 0px 0;
+	border-radius: 7px;
+margin: 0px 0px 0px 0px;
+
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color:#68C2FD;
+	min-height: 30px;	
+	border-radius: 7px;
+
+}
+QScrollBar::handle:vertical:hover{	
+	background-color:#A6E4FF;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #5AA7D9;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:#68C2FD;
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: #5AA7D9;
+}
+
+/* BTN BOTTOM - SCROLLBAR  */
+QScrollBar::add-line:vertical {
+
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color:rgb(255, 255, 255)
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color:rgb(255, 255, 255)
+}
+
+/* RESET ARROW  */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+} 
+
+
+/* HORIZONTAL SCROLLBAR - HOMEWORK */
+QScrollBar:horizontal {
+   
+}
+QScrollBar::handle:horizontal {
+    
+}
+QScrollBar::add-line:horizontal {
+    
+}
+QScrollBar::sub-line:horizontal {
+    
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+
+}
+
+
+
+</string>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>501</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width:0px;
+border-radius: 0px;
+background-color: #b6e9ff;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <property name="leftMargin">
+       <number>18</number>
+      </property>
+     </layout>
+    </widget>
+   </widget>
+   <zorder>immagineLabel</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>indietroLabel</zorder>
+   <zorder>percorsoLabel</zorder>
+   <zorder>titoloLabel_3</zorder>
+   <zorder>titoloLabel</zorder>
+   <zorder>scrollArea</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+  <include location="res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
