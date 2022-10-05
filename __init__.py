@@ -13,12 +13,12 @@ class ButtonTemplate(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
-        loadUi('ui/VendiOpera.ui',self)
+        loadUi('ui/VistaGestisciPostiLavoro.ui',self)
         # a quanto pare questo trucchetto richiede la versione 5 di pyqt
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground,True)
         self.setWindowIcon(QtGui.QIcon('ico/museum.ico'))
-        self.exitButton.clicked.connect(self.close)
-        self.reduceButton.clicked.connect(self.showMinimized)
+        #self.exitButton.clicked.connect(self.close)
+        #self.reduceButton.clicked.connect(self.showMinimized)
 
         # ATTENZIONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # dopo tantissimo try&error ho scoperto che gli errori di rendering sono dovuti
