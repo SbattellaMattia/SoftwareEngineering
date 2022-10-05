@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>570</width>
-    <height>708</height>
+    <width>557</width>
+    <height>342</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,19 @@ border-width:7;
 }
 QLabel{
 border-width:0;
-font: 18pt &quot;Lato Light&quot;;
+font: 20pt &quot;Lato Light&quot;;
+}
+QLineEdit{
+border-width:0;
+font: 14pt &quot;Lato Light&quot;;
+}
+QAbstractItemView {
+    border: 3px solid  rgb(104, 194, 253);  
+border-radius:8px;
+  selection-background-color:  rgb(104, 194, 253);
+margin:-2px;
+text-align:center;
+border-width:5;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -43,10 +55,10 @@ font: 18pt &quot;Lato Light&quot;;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>472</x>
+      <x>452</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -94,10 +106,10 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>528</x>
+      <x>508</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -145,10 +157,10 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>480</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -196,11 +208,11 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="indietroLabel">
+   <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>60</y>
+      <x>424</x>
+      <y>57</y>
       <width>36</width>
       <height>36</height>
      </rect>
@@ -208,7 +220,7 @@ QPushButton::pressed{
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>20</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -227,7 +239,7 @@ QPushButton::pressed{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="res/res.qrc">:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -236,9 +248,9 @@ QPushButton::pressed{
    <widget class="QLabel" name="titoloLabel_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>57</y>
-      <width>461</width>
+      <width>431</width>
       <height>31</height>
      </rect>
     </property>
@@ -250,272 +262,260 @@ color: #1684FC;
 font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>HomeSegreteria ➜ GestisciDonazioni</string>
+     <string>HomeAmministrazione ➜ AcquistaOpera</string>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel_3">
+   <widget class="QLabel" name="indietroLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>140</y>
-      <width>531</width>
-      <height>31</height>
+      <x>490</x>
+      <y>60</y>
+      <width>38</width>
+      <height>38</height>
      </rect>
     </property>
-    <property name="layoutDirection">
-     <enum>Qt::RightToLeft</enum>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">left: 802px;
-top: 386px;
-width: 307px;
-height: 19px;
-color: rgba(16, 16, 16);
-background-color: rgba(255, 255, 255,0);
-font-size: 16px;
-text-align: center;
-font: 25 8pt &quot;Lato Light&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="titoloLabel">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>110</y>
-      <width>531</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">left: 849px;
-background-color: rgba(255, 255, 255,0);
-top: 359px;
-width: 212px;
-height: 24px;
-color: rgba(16, 16, 16);
-font-size: 20px;
-text-align: center;
-
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco le richieste donazioni in attesa:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="immagineLabel">
-    <property name="geometry">
-     <rect>
-      <x>23</x>
-      <y>185</y>
-      <width>521</width>
-      <height>501</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">left: 737px;
-top: 416px;
-width: 436px;
-height: 377px;
-line-height: 20px;
-border-radius: 22px;
-background-color: rgba(182, 233, 255);
-text-align: center;</string>
+     <string notr="true">QLabel{
+left: 679px;
+top: 140px;
+width: 38px;
+height: 38px;
+border-radius: 33px;
+background-color: rgba(173, 237, 255, 0);
+}</string>
     </property>
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap>res/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ricercaSulWebButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>145</y>
+      <width>125</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color:rgb(255, 249, 190);
+border-radius:18;
+border-color:rgb(244, 233, 140);
+border-width:7;
+border-style: solid;
+}
+
+QLabel:hover{
+background-color: rgb(244, 233, 140);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/public_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="margin">
+     <number>17</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inserisciManualmenteButton">
+    <property name="geometry">
+     <rect>
+      <x>332</x>
+      <y>145</y>
+      <width>125</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color:rgb(183, 245, 255);
+border-radius:18;
+border-color:rgb(170, 217, 249);
+border-width:7;
+border-style: solid;
+}
+
+QLabel:hover{
+background-color: rgb(170, 217, 249);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/add_photo_alternate_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="margin">
+     <number>17</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>295</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>manualmente</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
-    <property name="margin">
-     <number>10</number>
+    <property name="dragEnabled">
+     <bool>false</bool>
     </property>
-    <property name="indent">
-     <number>10</number>
+    <property name="readOnly">
+     <bool>false</bool>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
+   <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>190</y>
-      <width>501</width>
-      <height>491</height>
+      <x>103</x>
+      <y>275</y>
+      <width>121</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:0px;
-border-color:#b6e9ff;
-border-style: solid;
-border-width:7;
-}
-
-
-QScrollArea{
-border-width:0px;
-border-radius: 22px;
-background-color: rgba(255, 255, 255, 255);
-}
-
-QScrollBar{
-border-width:0px;
-	border-radius:4px;
-background-color: rgba(255, 255, 255, 255);
-
-}
-
-
-/* VERTICAL SCROLLBAR */
- QScrollBar:vertical {
-	border: none;
-    width: 14px;
-    margin: 0px 0 0px 0;
-	border-radius: 7px;
-margin: 0px 0px 0px 0px;
-
- }
-
-/*  HANDLE BAR VERTICAL */
-QScrollBar::handle:vertical {	
-	background-color:#68C2FD;
-	min-height: 30px;	
-	border-radius: 7px;
-
-}
-QScrollBar::handle:vertical:hover{	
-	background-color:#A6E4FF;
-}
-QScrollBar::handle:vertical:pressed {	
-	background-color: #5AA7D9;
-}
-
-/* BTN TOP - SCROLLBAR */
-QScrollBar::sub-line:vertical {
-	background-color: rgb(255, 255, 255);
-	border-radius: 7px;
-}
-QScrollBar::sub-line:vertical:hover {	
-	background-color:#68C2FD;
-}
-QScrollBar::sub-line:vertical:pressed {	
-	background-color: #5AA7D9;
-}
-
-/* BTN BOTTOM - SCROLLBAR  */
-QScrollBar::add-line:vertical {
-
-	background-color: rgb(255, 255, 255);
-	border-radius: 7px;
-
-}
-QScrollBar::add-line:vertical:hover {	
-	background-color:rgb(255, 255, 255)
-}
-QScrollBar::add-line:vertical:pressed {	
-	background-color:rgb(255, 255, 255)
-}
-
-/* RESET ARROW  */
-QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
-	background: none;
-}
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-	background: none;
-} 
-
-
-/* HORIZONTAL SCROLLBAR - HOMEWORK */
-QScrollBar:horizontal {
-   
-}
-QScrollBar::handle:horizontal {
-    
-}
-QScrollBar::add-line:horizontal {
-    
-}
-QScrollBar::sub-line:horizontal {
-    
-}
-QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
-{
-
-}
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
-{
-
-}
-
-
-
-</string>
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
     </property>
-    <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOff</enum>
+    <property name="text">
+     <string>Ricerca sul web</string>
     </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>501</width>
-       <height>491</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-width:0px;
-border-radius: 0px;
-background-color: #b6e9ff;</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <property name="spacing">
-       <number>12</number>
-      </property>
-      <property name="leftMargin">
-       <number>18</number>
-      </property>
-     </layout>
-    </widget>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
    </widget>
-   <zorder>immagineLabel</zorder>
-   <zorder>label</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>indietroLabel</zorder>
-   <zorder>titoloLabel_2</zorder>
-   <zorder>titoloLabel_3</zorder>
-   <zorder>titoloLabel</zorder>
-   <zorder>scrollArea</zorder>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>88</y>
+      <width>541</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+font: 25 18pt &quot;Lato Light&quot;;
+background-color: rgba(255, 255, 255,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cosa desideri fare?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>275</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>Inserisci</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
-  <include location="res.qrc"/>
-  <include location="res/res.qrc"/>
+  <include location="../../../AppData/Local/Temp/res.qrc"/>
+  <include location="../../../AppData/Local/Temp/res/res.qrc"/>
  </resources>
  <connections/>
 </ui>

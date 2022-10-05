@@ -275,7 +275,7 @@ background-color:rgba(255, 255, 255,0);</string>
    <widget class="QPushButton" name="ricercaButton">
     <property name="geometry">
      <rect>
-      <x>146</x>
+      <x>141</x>
       <y>200</y>
       <width>209</width>
       <height>52</height>
@@ -351,7 +351,7 @@ text-align: center;</string>
    <widget class="QLineEdit" name="dataLineEdit">
     <property name="geometry">
      <rect>
-      <x>283</x>
+      <x>280</x>
       <y>132</y>
       <width>150</width>
       <height>30</height>
@@ -442,7 +442,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>241</x>
       <y>110</y>
       <width>4</width>
       <height>70</height>
@@ -458,7 +458,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLineEdit" name="dataLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>283</x>
+      <x>280</x>
       <y>372</y>
       <width>150</width>
       <height>30</height>
@@ -572,7 +572,7 @@ text-align: center;</string>
    <widget class="QPushButton" name="ricercaButton_2">
     <property name="geometry">
      <rect>
-      <x>146</x>
+      <x>141</x>
       <y>440</y>
       <width>209</width>
       <height>52</height>
@@ -625,7 +625,7 @@ QPushButton::pressed{
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>241</x>
       <y>350</y>
       <width>4</width>
       <height>70</height>
@@ -641,9 +641,9 @@ QPushButton::pressed{
    <widget class="QLabel" name="frecciaSxLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>36</x>
       <y>430</y>
-      <width>71</width>
+      <width>81</width>
       <height>71</height>
      </rect>
     </property>
@@ -669,7 +669,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="frecciaDxLabel">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>376</x>
       <y>430</y>
       <width>81</width>
       <height>71</height>

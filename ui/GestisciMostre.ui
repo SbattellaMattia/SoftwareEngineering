@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>437</width>
-    <height>653</height>
+    <width>557</width>
+    <height>342</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@ border-width:5;
    <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>332</x>
+      <x>452</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -109,7 +109,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>388</x>
+      <x>508</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -160,7 +160,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>480</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -208,12 +208,49 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel">
+   <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>191</width>
+      <x>424</x>
+      <y>57</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato Light</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="percorsoLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>57</y>
+      <width>431</width>
       <height>31</height>
      </rect>
     </property>
@@ -225,13 +262,13 @@ color: #1684FC;
 font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>HomeSegereteria</string>
+     <string>HomeAmministrazione ➜ GestisciMostre</string>
     </property>
    </widget>
-   <widget class="QLabel" name="accountButton">
+   <widget class="QLabel" name="indietroLabel">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>490</x>
       <y>60</y>
       <width>38</width>
       <height>38</height>
@@ -260,7 +297,7 @@ background-color: rgba(173, 237, 255, 0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>res/account_circle_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -269,60 +306,11 @@ background-color: rgba(173, 237, 255, 0);
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="visualizzaMostraAttualeButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>152</y>
-      <width>378</width>
-      <height>228</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgb(255, 250, 223);
-left: 202px;
-top: 233px;
-width: 378px;
-height: 214px;
-line-height: 20px;
-border-radius: 22px;
-text-align: center;
-border-width:0;
-border-radius: 30px
-}
-
-
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>421</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-font: 25 18pt &quot;Dubai Light&quot;;
-background-color: rgba(255, 255, 255,0);
-}</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cosa desideri fare?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="acquistaAbbonamentoButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>182</y>
+      <x>100</x>
+      <y>145</y>
       <width>125</width>
       <height>125</height>
      </rect>
@@ -351,7 +339,7 @@ background-color: rgb(244, 233, 140);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>res/workspace_premium_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/info_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -360,151 +348,11 @@ background-color: rgb(244, 233, 140);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="allestisciNuovaMostraButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>402</y>
-      <width>378</width>
-      <height>228</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-left: 202px;
-top: 465px;
-width: 378px;
-height: 219px;
-line-height: 20px;
-border-radius: 22px;
-background-color: rgba(218, 248, 255);
-text-align: center;
-}
-
-
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>266</x>
-      <y>310</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato-light</family>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgb(255, 250, 223);
-left: 244px;
-top: 414px;
-width: 119px;
-height: 19px;
-color: rgba(16, 16, 16,200);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;
-}</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Convalida &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>74</x>
-      <y>310</y>
-      <width>101</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato-light</family>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgb(255, 250, 223);
-left: 244px;
-top: 414px;
-width: 119px;
-height: 19px;
-color: rgba(16, 16, 16,200);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;
-}</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Acquista &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="convalidaBigliettoButton">
-    <property name="geometry">
-     <rect>
-      <x>259</x>
-      <y>182</y>
-      <width>125</width>
-      <height>125</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color:rgb(183, 255, 186);
-border-radius:18;
-border-color:rgb(145, 234, 161);
-border-width:7;
-border-style: solid;
-}
-
-QLabel:hover{
-background-color: rgb(145, 234, 161);
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>res/verified_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="margin">
-     <number>17</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="gestisciDonazioneButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>432</y>
+      <x>332</x>
+      <y>145</y>
       <width>125</width>
       <height>125</height>
      </rect>
@@ -533,7 +381,7 @@ background-color: rgb(170, 217, 249);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>res/volunteer_activism_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap>res/add_photo_alternate_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -542,123 +390,168 @@ background-color: rgb(170, 217, 249);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="rinnovoAbbonamentoButton">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>259</x>
-      <y>432</y>
-      <width>125</width>
-      <height>125</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgb(199, 201, 255);
-border-radius:18;
-border-color: rgb(190, 166, 244);
-border-width:7;
-border-style: solid;
-}
-
-QLabel:hover{
-background-color: rgb(190, 166, 244);
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>res/refresh_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="margin">
-     <number>17</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>79</x>
-      <y>561</y>
-      <width>91</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato-light</family>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: rgb(218, 248, 255);
-left: 244px;
-top: 414px;
-width: 119px;
-height: 19px;
-color: rgba(16, 16, 16,200);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;
-}</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;donazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>272</x>
-      <y>561</y>
-      <width>101</width>
+      <x>10</x>
+      <y>88</y>
+      <width>541</width>
       <height>51</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Lato-light</family>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color: rgb(218, 248, 255);
-left: 244px;
-top: 414px;
-width: 119px;
-height: 19px;
-color: rgba(16, 16, 16,200);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+font: 25 18pt &quot;Lato Light&quot;;
+background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Rinnovo &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cosa desideri fare?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>275</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>Visualizza</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>290</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>mostra attuale</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>275</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>Allestisci</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">left: 171px;
+top: 623px;
+width: 99px;
+height: 38px;
+color: rgba(16, 16, 16,200);
+background-color: rgba(255, 255, 255,0);
+font-size: 16px;
+text-align: center;
+font-family: Lato-light;</string>
+    </property>
+    <property name="text">
+     <string>nuova mostra</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
  </widget>
  <resources>
-  <include location="res.qrc"/>
-  <include location="res/res.qrc"/>
+  <include location="../../../AppData/Local/Temp/res.qrc"/>
+  <include location="../../../AppData/Local/Temp/res/res.qrc"/>
  </resources>
  <connections/>
 </ui>

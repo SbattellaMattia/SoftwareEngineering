@@ -17,15 +17,15 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>230</y>
-      <width>180</width>
-      <height>45</height>
+      <x>220</x>
+      <y>240</y>
+      <width>183</width>
+      <height>44</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Lato Light</family>
+      <family>Lato</family>
       <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -44,7 +44,7 @@
  border-style: solid;
  border-radius:22px;
 color: rgb(255, 255, 255);
-font: 14pt &quot;Lato Light&quot;;
+font: 14pt &quot;Lato&quot;;
 }
 
 QPushButton::hover{

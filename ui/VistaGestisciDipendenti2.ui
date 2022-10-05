@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>570</width>
-    <height>775</height>
+    <height>706</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -250,7 +250,7 @@ color: #1684FC;
 font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>HomeAmministrazione ➜ GestisciDipendenti</string>
+     <string>ModificaTurnoGuida ➜ GestisciDipendenti</string>
     </property>
    </widget>
    <widget class="QLabel" name="titoloLabel_3">
@@ -274,7 +274,7 @@ color: rgba(16, 16, 16);
 background-color: rgba(255, 255, 255,0);
 font-size: 16px;
 text-align: center;
-font-family: Lato-light;
+
 </string>
     </property>
     <property name="text">
@@ -302,78 +302,14 @@ height: 24px;
 color: rgba(16, 16, 16);
 font-size: 20px;
 text-align: center;
-font-family: Lato-light;
+
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco la lista dei dipendenti del museo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco la lista delle guide del museo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>700</y>
-      <width>180</width>
-      <height>45</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>14</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-
-
-QPushButton{
-left: 863px;
-top: 820px;
-width: 183px;
-height: 44px;
-color: rgba(255, 255, 255, 100);
-font-size: 16px;
-text-align: center;
-font-family: Roboto;
-background-color:rgb(104, 194, 253);
- border-style: solid;
- border-radius:22px;
-color: rgb(255, 255, 255);
-font: 14pt &quot;Lato Light&quot;;
-}
-
-QPushButton::hover{
-
-
-	border-color : rgb(15, 138, 204);
-	color: white;
-border-width:0;
-}
-
-QPushButton::pressed{
-	border-color:rgb(104, 194, 253);
-	border-width:4;
-	background-color : white;
-	color:rgb(104, 194, 253);
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Assumi</string>
     </property>
    </widget>
    <widget class="QLabel" name="immagineLabel">
@@ -574,7 +510,6 @@ background-color: #b6e9ff;</string>
    <zorder>percorsoLabel</zorder>
    <zorder>titoloLabel_3</zorder>
    <zorder>titoloLabel</zorder>
-   <zorder>pushButton</zorder>
    <zorder>scrollArea</zorder>
   </widget>
  </widget>

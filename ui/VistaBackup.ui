@@ -274,7 +274,7 @@ color: rgba(16, 16, 16);
 background-color: rgba(255, 255, 255,0);
 font-size: 16px;
 text-align: center;
-font-family: Lato-light;
+
 </string>
     </property>
     <property name="text">
@@ -302,7 +302,7 @@ height: 24px;
 color: rgba(16, 16, 16);
 font-size: 20px;
 text-align: center;
-font-family: Lato-light;
+
 </string>
     </property>
     <property name="text">
@@ -323,7 +323,7 @@ font-family: Lato-light;
     </property>
     <property name="font">
      <font>
-      <family>Lato Light</family>
+      <family>Lato</family>
       <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -353,7 +353,7 @@ background-color:rgb(104, 194, 253);
  border-style: solid;
  border-radius:22px;
 color: rgb(255, 255, 255);
-font: 14pt &quot;Lato Light&quot;;
+font: 14pt &quot;Lato&quot;;
 }
 
 QPushButton::hover{
