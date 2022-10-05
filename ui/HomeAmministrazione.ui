@@ -226,6 +226,9 @@ QPushButton::pressed{
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
 left: 679px;
@@ -318,7 +321,7 @@ border-radius: 30px
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -334,15 +337,14 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;turni guide&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;turni guide&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciStruttureButton">
+   <widget class="QLabel" name="gestisciStruttureBigButton">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -384,7 +386,7 @@ background-color: rgb(145, 234, 161);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="acquistaOpereButton">
+   <widget class="QLabel" name="acquistaOpereBigButton">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -437,7 +439,7 @@ background-color: rgb(190, 166, 244);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -453,12 +455,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;dipendenti&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;dipendenti&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -472,7 +473,6 @@ font-family: Lato-light;
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-font: 25 18pt &quot;Dubai Light&quot;;
 background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
@@ -491,7 +491,7 @@ background-color: rgba(255, 255, 255,0);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -507,12 +507,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Acquista&lt;br/&gt;opere&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Acquista&lt;br/&gt;opere&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_19">
@@ -526,7 +525,7 @@ font-family: Lato-light;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -542,12 +541,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;mostre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;mostre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_20">
@@ -561,7 +559,7 @@ font-family: Lato-light;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -577,15 +575,14 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Visualizza&lt;br/&gt;statistiche&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Visualizza&lt;br/&gt;statistiche&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciBackupButton">
+   <widget class="QLabel" name="gestisciBackupBigButton">
     <property name="geometry">
      <rect>
       <x>470</x>
@@ -638,7 +635,7 @@ background-color: rgb(247, 175, 227);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -654,12 +651,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;backup&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;backup&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_16">
@@ -673,7 +669,7 @@ font-family: Lato-light;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -689,12 +685,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Visualizza&lt;br/&gt;report incassi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Visualizza&lt;br/&gt;report incassi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -708,7 +703,7 @@ font-family: Lato-light;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -724,15 +719,14 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;strutture&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;strutture&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciDipendentiButton">
+   <widget class="QLabel" name="gestisciDipendentiBigButton">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -774,7 +768,7 @@ background-color: rgb(244, 233, 140);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciTurniGuideButton">
+   <widget class="QLabel" name="gestisciTurniGuideBigButton">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -816,7 +810,7 @@ background-color: rgb(242, 186, 172);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="visualizzaStatisticheButton">
+   <widget class="QLabel" name="visualizzaStatisticheBigButton">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -858,7 +852,7 @@ background-color: rgb(170, 217, 249);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="visualizzaReportIncassiButton">
+   <widget class="QLabel" name="visualizzaReportIncassiBigButton">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -900,7 +894,7 @@ background-color: rgb(138, 193, 223);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciMostreButton">
+   <widget class="QLabel" name="gestisciMostreBigButton">
     <property name="geometry">
      <rect>
       <x>470</x>

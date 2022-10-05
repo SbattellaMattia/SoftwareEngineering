@@ -221,7 +221,7 @@ text-align: center;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
       <x>384</x>
@@ -272,7 +272,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -323,7 +323,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
       <x>412</x>
@@ -1112,9 +1112,9 @@ text-align: center;</string>
    <zorder>pushButton_4</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
+   <zorder>reduceButton</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>maximizeButton</zorder>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
    <zorder>label_7</zorder>

@@ -415,12 +415,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Convalida &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Convalida &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
@@ -450,12 +449,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Acquista &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Acquista &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="convalidaBigliettoButton">
@@ -611,12 +609,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Gestisci&lt;br/&gt;donazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Gestisci&lt;br/&gt;donazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_14">
@@ -646,12 +643,11 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Rinnovo &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Rinnovo &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>

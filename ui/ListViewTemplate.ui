@@ -1563,7 +1563,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <number>0</number>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
       <x>248</x>
@@ -1616,7 +1616,7 @@ QPushButton::pressed{
      <string>Download</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -1830,7 +1830,7 @@ font: 25 italic 14pt &quot;Lato&quot;;	</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
       <x>120</x>

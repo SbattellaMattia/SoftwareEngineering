@@ -274,8 +274,7 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
@@ -393,8 +392,7 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">
@@ -470,8 +468,7 @@ width: 119px;
 height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
-text-align: center;
-font-family: Lato-light;
+
 }</string>
     </property>
     <property name="text">

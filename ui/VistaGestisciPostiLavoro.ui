@@ -43,7 +43,7 @@ font: 18pt &quot;Lato Light&quot;;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
       <x>472</x>
@@ -94,7 +94,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
       <x>528</x>
@@ -145,7 +145,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -941,9 +941,9 @@ text-align: center;</string>
    <zorder>immagineLabel_2</zorder>
    <zorder>immagineLabel</zorder>
    <zorder>label</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
+   <zorder>reduceButton</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>maximizeButton</zorder>
    <zorder>indietroLabel</zorder>
    <zorder>percorsoLabel</zorder>
    <zorder>scrollArea</zorder>

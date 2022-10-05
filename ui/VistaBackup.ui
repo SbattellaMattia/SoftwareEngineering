@@ -43,7 +43,7 @@ font: 18pt &quot;Lato Light&quot;;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
       <x>472</x>
@@ -94,7 +94,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
       <x>528</x>
@@ -145,7 +145,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -272,8 +272,6 @@ width: 307px;
 height: 19px;
 color: rgba(16, 16, 16);
 background-color: rgba(255, 255, 255,0);
-font-size: 16px;
-text-align: center;
 
 </string>
     </property>
@@ -347,7 +345,6 @@ width: 183px;
 height: 44px;
 color: rgba(255, 255, 255, 100);
 font-size: 16px;
-text-align: center;
 font-family: Roboto;
 background-color:rgb(104, 194, 253);
  border-style: solid;
@@ -567,9 +564,9 @@ background-color: #b6e9ff;</string>
    </widget>
    <zorder>immagineLabel</zorder>
    <zorder>label</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
+   <zorder>reduceButton</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>maximizeButton</zorder>
    <zorder>indietroLabel</zorder>
    <zorder>titoloLabel_2</zorder>
    <zorder>titoloLabel_3</zorder>

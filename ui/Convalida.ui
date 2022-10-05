@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
-    <height>342</height>
+    <width>462</width>
+    <height>397</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@ border-width:5;
    <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>332</x>
+      <x>362</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -109,7 +109,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>388</x>
+      <x>418</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -160,7 +160,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -208,49 +208,12 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>424</x>
-      <y>57</y>
-      <width>36</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="titoloLabel_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>57</y>
-      <width>311</width>
+      <width>371</width>
       <height>31</height>
      </rect>
     </property>
@@ -268,7 +231,7 @@ font: 14pt &quot;Lato&quot;;</string>
    <widget class="QLabel" name="indietroLabel">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>400</x>
       <y>60</y>
       <width>38</width>
       <height>38</height>
@@ -306,46 +269,55 @@ background-color: rgba(173, 237, 255, 0);
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLabel" name="InserisciManualmenteBigButton">
     <property name="geometry">
      <rect>
-      <x>53</x>
-      <y>285</y>
-      <width>151</width>
-      <height>22</height>
+      <x>66</x>
+      <y>166</y>
+      <width>135</width>
+      <height>135</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">left: 171px;
-top: 623px;
-width: 99px;
-height: 38px;
-color: rgba(16, 16, 16,200);
-background-color: rgba(255, 255, 255,0);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;</string>
+     <string notr="true">QLabel{
+background-color:rgb(255, 249, 190);
+border-radius:18;
+border-color:rgb(244, 233, 140);
+border-width:7;
+border-style: solid;
+}
+
+QLabel:hover{
+background-color: rgb(244, 233, 140);
+}
+</string>
     </property>
     <property name="text">
-     <string>Inserisci mualmente</string>
+     <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="pixmap">
+     <pixmap>res/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
-    <property name="dragEnabled">
-     <bool>false</bool>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
-    <property name="readOnly">
-     <bool>false</bool>
+    <property name="margin">
+     <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="scannerizzaButton">
+   <widget class="QLabel" name="ScannerizzaBigButton">
     <property name="geometry">
      <rect>
-      <x>251</x>
-      <y>155</y>
-      <width>125</width>
-      <height>125</height>
+      <x>261</x>
+      <y>166</y>
+      <width>135</width>
+      <height>135</height>
      </rect>
     </property>
     <property name="cursor">
@@ -381,45 +353,12 @@ background-color: rgb(170, 217, 249);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>285</y>
-      <width>111</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">left: 171px;
-top: 623px;
-width: 99px;
-height: 38px;
-color: rgba(16, 16, 16,200);
-background-color: rgba(255, 255, 255,0);
-font-size: 16px;
-text-align: center;
-font-family: Lato-light;</string>
-    </property>
-    <property name="text">
-     <string>Scannerriza</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="dragEnabled">
-     <bool>false</bool>
-    </property>
-    <property name="readOnly">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>94</y>
-      <width>421</width>
+      <y>99</y>
+      <width>441</width>
       <height>51</height>
      </rect>
     </property>
@@ -433,46 +372,60 @@ background-color: rgba(255, 255, 255,0);
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cosa desideri fare?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="inserisciManualmenteButton">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>64</x>
-      <y>155</y>
-      <width>125</width>
-      <height>125</height>
+      <x>58</x>
+      <y>310</y>
+      <width>151</width>
+      <height>41</height>
      </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-background-color:rgb(255, 249, 190);
-border-radius:18;
-border-color:rgb(244, 233, 140);
-border-width:7;
-border-style: solid;
-}
-
-QLabel:hover{
-background-color: rgb(244, 233, 140);
-}
-</string>
+font: 25 14pt &quot;Lato Light&quot;;
+background-color: rgba(255, 255, 255,0);
+}</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Inserisci manualmente</string>
     </property>
-    <property name="pixmap">
-     <pixmap>res/qr_code_2_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
     </property>
-    <property name="scaledContents">
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
      <bool>true</bool>
     </property>
-    <property name="margin">
-     <number>17</number>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>253</x>
+      <y>310</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+font: 25 14pt &quot;Lato Light&quot;;
+background-color: rgba(255, 255, 255,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Scannerriza</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

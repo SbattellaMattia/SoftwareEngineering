@@ -10,15 +10,16 @@ import myRes
 
 
 class ButtonTemplate(QMainWindow):
-    def __init__(self):
+    def __init__(self,uiFile):
         super().__init__()
+        print(uiFile)
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
-        loadUi('ui/VistaGestisciPostiLavoro.ui',self)
+        loadUi(uiFile, self)
         # a quanto pare questo trucchetto richiede la versione 5 di pyqt
-        self.setAttribute(QtCore.Qt.WA_TranslucentBackground,True)
-        self.setWindowIcon(QtGui.QIcon('ico/museum.ico'))
-        #self.exitButton.clicked.connect(self.close)
-        #self.reduceButton.clicked.connect(self.showMinimized)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
+        self.setWindowIcon(QtGui.QIcon('ico/museum_white.ico'))
+        self.exitButton.clicked.connect(self.close)
+        self.reduceButton.clicked.connect(self.showMinimized)
 
         # ATTENZIONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # dopo tantissimo try&error ho scoperto che gli errori di rendering sono dovuti
@@ -28,33 +29,48 @@ class ButtonTemplate(QMainWindow):
         #   PERSINO COMMENTARLO NON RISOLVE, DEVE ESSERE PROPRIO TOLTO!
         #   ce lo rimettiamo poi nel file qui sotto, ora funziona tutto.
         # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        self.setStyleSheet(open('ui/css/main.css','r').read())
-        # self.immagineLabel.setMargin(12)
+        self.setStyleSheet(open('ui/css/main.css', 'r').read())
+
+        # poiché si perdono i margini, li setto manualmente
+        for bigButton in list(filter(lambda el:'bigbutton'in el.lower(),self.__dict__.keys())):
+            getattr(self,bigButton).setMargin(17)
 
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Escape:
             self.close()
 
     def mousePressEvent(self, event):
+        if event.pos().y() > 50:
+            return
         self.start = self.mapToGlobal(event.pos())
         self.pressing = True
+        QApplication.setOverrideCursor(Qt.SizeAllCursor)
+
+
+    def mouseReleaseEvent(self, event):
+        self.pressing = False
+        QApplication.restoreOverrideCursor()
 
     def mouseMoveEvent(self, event):
-        if self.pressing:
+        if 'pressing' in self.__dict__.keys() and self.pressing:
             self.end = self.mapToGlobal(event.pos())
             self.movement = self.end - self.start
             self.setGeometry(self.mapToGlobal(self.movement).x(),
-                                    self.mapToGlobal(self.movement).y(),
-                                    self.width(),
-                                    self.height())
+                             self.mapToGlobal(self.movement).y(),
+                             self.width(),
+                             self.height())
             self.start = self.end
 
-if __name__ == "__main__":
 
-    # myappid = 'museum.1.0'
-    # ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+if __name__ == "__main__":
+    myappid = 'museum.1.0'
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+
+    filenames = list(filter(lambda file: '.ui' in file and 'template' not in file.lower(),
+                            next(os.walk('ui'), (None, None, []))[2]))
 
     app = QApplication(sys.argv)
-    mainWidget = ButtonTemplate()
+    print(len(filenames))
+    mainWidget = ButtonTemplate('ui/'+filenames[5])
     mainWidget.show()
     sys.exit(app.exec())

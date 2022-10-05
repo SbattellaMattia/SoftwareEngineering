@@ -894,8 +894,6 @@ width: 307px;
 height: 19px;
 color: rgba(16, 16, 16);
 background-color: rgba(255, 255, 255,0);
-font-size: 16px;
-text-align: center;
 
 </string>
     </property>
