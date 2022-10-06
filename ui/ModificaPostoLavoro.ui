@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>577</width>
-    <height>416</height>
+    <width>513</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@ border-width:5;
    <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>472</x>
+      <x>406</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -109,7 +109,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>528</x>
+      <x>462</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -160,7 +160,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>434</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -208,47 +208,10 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>424</x>
-      <y>57</y>
-      <width>36</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="titoloLabel_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>33</x>
       <y>57</y>
       <width>451</width>
       <height>31</height>
@@ -268,7 +231,7 @@ font: 14pt &quot;Lato&quot;;</string>
    <widget class="QLabel" name="indietroLabel">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>444</x>
       <y>60</y>
       <width>38</width>
       <height>38</height>
@@ -309,10 +272,10 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>69</x>
+      <x>37</x>
       <y>161</y>
       <width>442</width>
-      <height>174</height>
+      <height>179</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -332,9 +295,9 @@ text-align: center;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>11</x>
       <y>104</y>
-      <width>561</width>
+      <width>491</width>
       <height>51</height>
      </rect>
     </property>
@@ -351,7 +314,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>69</x>
+      <x>37</x>
       <y>219</y>
       <width>442</width>
       <height>4</height>
@@ -389,7 +352,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>69</x>
+      <x>37</x>
       <y>277</y>
       <width>442</width>
       <height>4</height>
@@ -427,10 +390,10 @@ text-align: center;</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>287</x>
+      <x>255</x>
       <y>161</y>
       <width>4</width>
-      <height>174</height>
+      <height>180</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -465,7 +428,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>87</x>
+      <x>55</x>
       <y>174</y>
       <width>34</width>
       <height>34</height>
@@ -506,7 +469,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>87</x>
+      <x>55</x>
       <y>234</y>
       <width>34</width>
       <height>34</height>
@@ -547,7 +510,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>87</x>
+      <x>55</x>
       <y>294</y>
       <width>34</width>
       <height>34</height>
@@ -588,8 +551,8 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>174</y>
+      <x>108</x>
+      <y>179</y>
       <width>58</width>
       <height>22</height>
      </rect>
@@ -621,8 +584,8 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>234</y>
+      <x>108</x>
+      <y>239</y>
       <width>58</width>
       <height>22</height>
      </rect>
@@ -654,8 +617,8 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>294</y>
+      <x>108</x>
+      <y>299</y>
       <width>91</width>
       <height>22</height>
      </rect>
@@ -687,7 +650,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLineEdit" name="nomeLineEdit">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>278</x>
       <y>174</y>
       <width>183</width>
       <height>30</height>
@@ -701,27 +664,26 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Segreteria A</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>Segreteria A</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="pianoSpinBox">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>320</x>
       <y>234</y>
-      <width>150</width>
+      <width>100</width>
       <height>30</height>
      </rect>
     </property>
@@ -753,18 +715,22 @@ background-color:rgb(104, 194, 253);
 }
 	
 QSpinBox::up-arrow {
-    image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);}
+    image: url(:/icons/keyboard_arrow_up_FILL1_wght600_GRAD200_opsz48_risultato.png);
+}
 
 QSpinBox::down-arrow  {
 	background-color:rgb(104, 194, 253);
-	border-radius:6px;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
 	margin:-2px -7px -3px -6px;
+
     border: 0px; /* This seems to replace the whole arrow of the combo box */
 }
 
 QSpinBox::up-arrow  {
 	background-color:rgb(104, 194, 253);
-	border-radius:6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
 	margin:-2px -7px -3px -6px;
     border: 0px; /* This seems to replace the whole arrow of the combo box */}
 
@@ -792,15 +758,15 @@ QSpinBox::down-arrow::pressed{
      <enum>QAbstractSpinBox::UpDownArrows</enum>
     </property>
     <property name="maximum">
-     <number>25</number>
+     <number>8</number>
     </property>
    </widget>
    <widget class="QSpinBox" name="capienzaSpinBox">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>320</x>
       <y>294</y>
-      <width>150</width>
+      <width>100</width>
       <height>30</height>
      </rect>
     </property>
@@ -832,18 +798,22 @@ background-color:rgb(104, 194, 253);
 }
 	
 QSpinBox::up-arrow {
-    image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);}
+    image: url(:/icons/keyboard_arrow_up_FILL1_wght600_GRAD200_opsz48_risultato.png);
+}
 
 QSpinBox::down-arrow  {
 	background-color:rgb(104, 194, 253);
-	border-radius:6px;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
 	margin:-2px -7px -3px -6px;
+
     border: 0px; /* This seems to replace the whole arrow of the combo box */
 }
 
 QSpinBox::up-arrow  {
 	background-color:rgb(104, 194, 253);
-	border-radius:6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
 	margin:-2px -7px -3px -6px;
     border: 0px; /* This seems to replace the whole arrow of the combo box */}
 
@@ -871,14 +841,14 @@ QSpinBox::down-arrow::pressed{
      <enum>QAbstractSpinBox::UpDownArrows</enum>
     </property>
     <property name="maximum">
-     <number>25</number>
+     <number>99</number>
     </property>
    </widget>
    <widget class="QPushButton" name="confermaButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>351</y>
+      <x>166</x>
+      <y>380</y>
       <width>183</width>
       <height>44</height>
      </rect>
@@ -932,6 +902,7 @@ QPushButton::pressed{
  <resources>
   <include location="../../../AppData/Local/Temp/res.qrc"/>
   <include location="../../../AppData/Local/Temp/res/res.qrc"/>
+  <include location="res/res.qrc"/>
  </resources>
  <connections/>
 </ui>

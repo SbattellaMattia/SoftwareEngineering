@@ -14,17 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton_3">
@@ -606,7 +596,7 @@ color: #1684FC;
 font: 16pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;GestisciDipendenti ➜ Assumi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>GestisciDipendenti ➜ Assumi</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -1301,9 +1291,9 @@ margin:-3px -3px -3px -10px;
    <widget class="QLineEdit" name="dataLineEdit">
     <property name="geometry">
      <rect>
-      <x>282</x>
+      <x>264</x>
       <y>261</y>
-      <width>150</width>
+      <width>180</width>
       <height>30</height>
      </rect>
     </property>
@@ -1333,8 +1323,11 @@ border-style: solid;
 border-width:3;
 }</string>
     </property>
+    <property name="inputMask">
+     <string>00/00/0000;0</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>//</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1346,9 +1339,9 @@ border-width:3;
    <widget class="QLineEdit" name="cognomeLineEdit">
     <property name="geometry">
      <rect>
-      <x>282</x>
+      <x>264</x>
       <y>205</y>
-      <width>150</width>
+      <width>180</width>
       <height>30</height>
      </rect>
     </property>
@@ -1382,9 +1375,9 @@ border-width:3;
    <widget class="QLineEdit" name="nomelineEdit">
     <property name="geometry">
      <rect>
-      <x>282</x>
+      <x>264</x>
       <y>148</y>
-      <width>150</width>
+      <width>180</width>
       <height>30</height>
      </rect>
     </property>

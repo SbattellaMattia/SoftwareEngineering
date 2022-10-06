@@ -208,47 +208,10 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>424</x>
-      <y>57</y>
-      <width>36</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="percorsoLabel">
     <property name="geometry">
      <rect>
-      <x>15</x>
+      <x>30</x>
       <y>60</y>
       <width>431</width>
       <height>31</height>
@@ -262,7 +225,7 @@ color: #1684FC;
 font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>HomeSegreteria ➜ RinnovaAbbonamento</string>
+     <string>HomeSegreteria ➜ VistaAbbonamento</string>
     </property>
    </widget>
    <widget class="QLabel" name="indietroLabel">
@@ -306,13 +269,13 @@ background-color: rgba(173, 237, 255, 0);
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="qrCodeBigButton">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>116</y>
-      <width>190</width>
-      <height>190</height>
+      <x>175</x>
+      <y>121</y>
+      <width>180</width>
+      <height>180</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -327,7 +290,7 @@ background-color: rgb(255, 249, 190);
 color: rgba(16, 16, 16, 100);
 font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 }</string>
     </property>
     <property name="text">
@@ -341,6 +304,9 @@ font-family: Arial;
     </property>
     <property name="margin">
      <number>17</number>
+    </property>
+    <property name="indent">
+     <number>-1</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -605,7 +571,7 @@ background-color: rgba(255, 255, 255,0);
      <string>titolo</string>
     </property>
    </widget>
-   <widget class="QLabel" name="cocgnomeLabe">
+   <widget class="QLabel" name="cognomeLabe">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -750,7 +716,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QPushButton" name="confermaButton">
     <property name="geometry">
      <rect>
-      <x>173</x>
+      <x>176</x>
       <y>670</y>
       <width>180</width>
       <height>45</height>
@@ -805,10 +771,9 @@ QPushButton::pressed{
    <zorder>reduceButton</zorder>
    <zorder>exitButton</zorder>
    <zorder>maximizeButton</zorder>
-   <zorder>label_18</zorder>
    <zorder>percorsoLabel</zorder>
    <zorder>indietroLabel</zorder>
-   <zorder>label_2</zorder>
+   <zorder>qrCodeBigButton</zorder>
    <zorder>label_5</zorder>
    <zorder>label_4</zorder>
    <zorder>label_6</zorder>
@@ -816,7 +781,7 @@ QPushButton::pressed{
    <zorder>label_10</zorder>
    <zorder>label_11</zorder>
    <zorder>nomeLabel</zorder>
-   <zorder>cocgnomeLabe</zorder>
+   <zorder>cognomeLabe</zorder>
    <zorder>codiceFiscaleLabel</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>

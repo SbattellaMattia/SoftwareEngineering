@@ -14,17 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -247,7 +237,7 @@ QPushButton::pressed{
 text-align: left;
 background-color: rgba(255, 255, 255,0);
 color: #1684FC;
-font: 14pt &quot;Lato&quot;;</string>
+font: 16pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
      <string>HomeAmministrazione ➜ Backups</string>
@@ -276,7 +266,7 @@ background-color: rgba(255, 255, 255,0);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -286,7 +276,7 @@ background-color: rgba(255, 255, 255,0);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>114</y>
       <width>531</width>
       <height>31</height>
      </rect>

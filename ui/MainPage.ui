@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>507</width>
-    <height>342</height>
+    <height>365</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -232,7 +232,7 @@ font: 16pt &quot;Lato&quot;;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>94</y>
+      <y>96</y>
       <width>491</width>
       <height>51</height>
      </rect>
@@ -244,21 +244,21 @@ background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Benvenuti! Chi desisdera accedere?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Benvenuto! Chi desisdera accedere?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>18</x>
+      <x>40</x>
       <y>290</y>
-      <width>161</width>
-      <height>21</height>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -275,16 +275,23 @@ height: 19px;
 color: rgba(16, 16, 16,200);
 font-size: 16px;
 
+
 }</string>
     </property>
     <property name="text">
      <string>Operatore al pubblico</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QLabel" name="operatoreAlPubblico">
+   <widget class="QLabel" name="operatoreAlPubblicoBigButton">
     <property name="geometry">
      <rect>
-      <x>27</x>
+      <x>38</x>
       <y>160</y>
       <width>125</width>
       <height>125</height>
@@ -323,10 +330,10 @@ background-color: rgb(244, 233, 140);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="amministrazione">
+   <widget class="QLabel" name="amministrazioneBigButton">
     <property name="geometry">
      <rect>
-      <x>353</x>
+      <x>342</x>
       <y>160</y>
       <width>125</width>
       <height>125</height>
@@ -368,7 +375,7 @@ background-color: rgb(170, 217, 249);
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>215</x>
+      <x>212</x>
       <y>290</y>
       <width>81</width>
       <height>21</height>
@@ -376,7 +383,7 @@ background-color: rgb(170, 217, 249);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -399,7 +406,7 @@ font-size: 16px;
      <string>Segreteria</string>
     </property>
    </widget>
-   <widget class="QLabel" name="segreteria">
+   <widget class="QLabel" name="segreteriaBigButton">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -444,7 +451,7 @@ background-color: rgb(145, 234, 161);
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>356</x>
+      <x>340</x>
       <y>290</y>
       <width>131</width>
       <height>21</height>
@@ -452,7 +459,7 @@ background-color: rgb(145, 234, 161);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>

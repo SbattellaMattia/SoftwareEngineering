@@ -14,188 +14,16 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}
-QAbstractItemView {
-    border: 3px solid  rgb(104, 194, 253);  
-border-radius:8px;
-  selection-background-color:  rgb(104, 194, 253);
-margin:-2px;
-text-align:center;
-border-width:5;
-}
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>15</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#ee8888;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ae4a4a;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ae4a4a;
-	border-width:3;
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>15</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#fff08c	;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#ccc664;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#ccc664;
-	border-width:3;
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>15</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>21</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>24</width>
-      <height>24</height>
-     </size>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
- background-color:#76ff85;
- border-style: solid;
- border-radius:12px;
-font: 18pt &quot;Candara&quot;;
-border-color:#6bcc73;
-border-width:3;
-}
-
-QPushButton::pressed{
-	background-color : white;
-	border-color:#6bcc73;
-	border-width:3;
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>44</y>
       <width>641</width>
-      <height>6</height>
+      <height>5</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -230,9 +58,9 @@ font: 14pt &quot;Lato&quot;;
    <widget class="QLabel" name="dettagliRinnovoLabel">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>0</x>
       <y>360</y>
-      <width>311</width>
+      <width>551</width>
       <height>41</height>
      </rect>
     </property>
@@ -245,6 +73,9 @@ font-size: 20px;
     </property>
     <property name="text">
      <string>Dettagli rinnovo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="durataLabel">
@@ -443,11 +274,7 @@ text-align: center;</string>
     </property>
     <property name="font">
      <font>
-      <family>Lato Light</family>
       <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -526,11 +353,14 @@ text-align: center;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="qrCodeFrame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>110</y>
+      <x>94</x>
+      <y>121</y>
       <width>360</width>
       <height>222</height>
      </rect>
@@ -549,7 +379,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>600</y>
+      <y>605</y>
       <width>209</width>
       <height>52</height>
      </rect>
@@ -633,11 +463,161 @@ QPushButton::pressed{
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="maximizeButton">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>16</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#fff08c	;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ccc664;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ccc664;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>503</x>
+      <y>16</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#ee8888;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#ae4a4a;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#ae4a4a;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reduceButton">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>16</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:#76ff85;
+ border-style: solid;
+ border-radius:11px;
+font: 18pt &quot;Candara&quot;;
+border-color:#6bcc73;
+border-width:3;
+}
+
+QPushButton::pressed{
+	background-color : white;
+	border-color:#6bcc73;
+	border-width:3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>label_8</zorder>
    <zorder>label_6</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_4</zorder>
    <zorder>label</zorder>
    <zorder>label_7</zorder>
    <zorder>dettagliRinnovoLabel</zorder>
@@ -648,9 +628,12 @@ QPushButton::pressed{
    <zorder>importoTotaleLabel</zorder>
    <zorder>costoTotaleLabel</zorder>
    <zorder>label_10</zorder>
-   <zorder>frame</zorder>
+   <zorder>qrCodeFrame</zorder>
    <zorder>pushButton</zorder>
    <zorder>indietroLabel</zorder>
+   <zorder>maximizeButton</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>reduceButton</zorder>
   </widget>
  </widget>
  <resources/>

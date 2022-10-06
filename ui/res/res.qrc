@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>add_a_photo_FILL1_wght600_GRAD200_opsz48_risultato.png</file>
+    <file>keyboard_arrow_up_FILL1_wght600_GRAD200_opsz48_risultato.png</file>
     <file>expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png</file>
     <file>euro_FILL1_wght600_GRAD200_opsz48_risultato.png</file>
     <file>fullscreen_FILL1_wght600_GRAD200_opsz48_risultato.png</file>

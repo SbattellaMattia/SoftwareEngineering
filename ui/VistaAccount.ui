@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>385</width>
-    <height>615</height>
+    <width>413</width>
+    <height>636</height>
    </rect>
   </property>
   <property name="cursor">
@@ -51,7 +51,7 @@ font: 20pt &quot;Lato Light&quot;;
      <rect>
       <x>25</x>
       <y>145</y>
-      <width>334</width>
+      <width>361</width>
       <height>233</height>
      </rect>
     </property>
@@ -72,7 +72,7 @@ text-align: center;</string>
    <widget class="QPushButton" name="reduceButton">
     <property name="geometry">
      <rect>
-      <x>292</x>
+      <x>309</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -123,7 +123,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>348</x>
+      <x>365</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -174,7 +174,7 @@ QPushButton::pressed{
    <widget class="QPushButton" name="maximizeButton">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>337</x>
       <y>15</y>
       <width>22</width>
       <height>22</height>
@@ -225,7 +225,7 @@ QPushButton::pressed{
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>357</x>
       <y>57</y>
       <width>36</width>
       <height>36</height>
@@ -313,7 +313,7 @@ background-color:rgba(255, 255, 255,0);</string>
      <rect>
       <x>20</x>
       <y>477</y>
-      <width>334</width>
+      <width>370</width>
       <height>4</height>
      </rect>
     </property>
@@ -351,7 +351,7 @@ text-align: center;</string>
      <rect>
       <x>26</x>
       <y>427</y>
-      <width>333</width>
+      <width>361</width>
       <height>105</height>
      </rect>
     </property>
@@ -372,10 +372,10 @@ text-align: center;</string>
    <widget class="QPushButton" name="ricercaButton">
     <property name="geometry">
      <rect>
-      <x>101</x>
-      <y>550</y>
+      <x>115</x>
+      <y>566</y>
       <width>183</width>
-      <height>44</height>
+      <height>45</height>
      </rect>
     </property>
     <property name="font">
@@ -427,7 +427,7 @@ QPushButton::pressed{
      <rect>
       <x>10</x>
       <y>387</y>
-      <width>366</width>
+      <width>391</width>
       <height>41</height>
      </rect>
     </property>
@@ -449,7 +449,7 @@ background-color: rgba(255, 255, 255,0);
      <rect>
       <x>10</x>
       <y>102</y>
-      <width>365</width>
+      <width>391</width>
       <height>41</height>
      </rect>
     </property>
@@ -471,7 +471,7 @@ background-color: rgba(255, 255, 255,0);
      <rect>
       <x>20</x>
       <y>284</y>
-      <width>341</width>
+      <width>370</width>
       <height>4</height>
      </rect>
     </property>
@@ -509,7 +509,7 @@ text-align: center;</string>
      <rect>
       <x>20</x>
       <y>331</y>
-      <width>341</width>
+      <width>370</width>
       <height>4</height>
      </rect>
     </property>
@@ -547,7 +547,7 @@ text-align: center;</string>
      <rect>
       <x>20</x>
       <y>237</y>
-      <width>341</width>
+      <width>370</width>
       <height>4</height>
      </rect>
     </property>
@@ -585,7 +585,7 @@ text-align: center;</string>
      <rect>
       <x>20</x>
       <y>191</y>
-      <width>341</width>
+      <width>370</width>
       <height>4</height>
      </rect>
     </property>

@@ -310,7 +310,6 @@ border-radius: 30px
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-font: 25 18pt &quot;Dubai Light&quot;;
 background-color: rgba(255, 255, 255,0);
 }</string>
     </property>
@@ -318,7 +317,7 @@ background-color: rgba(255, 255, 255,0);
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cosa desideri fare?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="acquistaAbbonamentoButton">
+   <widget class="QLabel" name="acquistaAbbonamentoBigButton">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -399,7 +398,7 @@ text-align: center;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -433,7 +432,7 @@ font-size: 16px;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -456,7 +455,7 @@ font-size: 16px;
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Acquista &lt;br/&gt;abbonamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="convalidaBigliettoButton">
+   <widget class="QLabel" name="convalidaBigliettoBigButton">
     <property name="geometry">
      <rect>
       <x>259</x>
@@ -498,7 +497,7 @@ background-color: rgb(145, 234, 161);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="gestisciDonazioneButton">
+   <widget class="QLabel" name="gestisciDonazioneBigButton">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -540,7 +539,7 @@ background-color: rgb(170, 217, 249);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="rinnovoAbbonamentoButton">
+   <widget class="QLabel" name="rinnovoAbbonamentoBigButton">
     <property name="geometry">
      <rect>
       <x>259</x>
@@ -593,7 +592,7 @@ background-color: rgb(190, 166, 244);
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -627,7 +626,7 @@ font-size: 16px;
     </property>
     <property name="font">
      <font>
-      <family>Lato-light</family>
+      <family>Lato Light</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>

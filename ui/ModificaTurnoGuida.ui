@@ -7,24 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>489</width>
-    <height>477</height>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -274,85 +264,6 @@ text-align: center;</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="capienzaSpinBox">
-    <property name="geometry">
-     <rect>
-      <x>286</x>
-      <y>227</y>
-      <width>150</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSpinBox{
-background:rgb(255, 255, 255);
-border-radius:8px;
-border-color:rgb(255, 255, 255);
-border-style: solid;
-text-align:center;
-border-width:3;
-}
-
-QSpinBox::focus{
-background:rgb(255, 255, 255);
-border-radius:8px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:3;
-}
-
-
-QSpinBox::down-arrow {
-    image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
-background-color:rgb(104, 194, 253);
-	width: 26px;
-    height: 26px;
-	margin: 0px 0px 0px 0px
-}
-	
-QSpinBox::up-arrow {
-    image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);}
-
-QSpinBox::down-arrow  {
-	background-color:rgb(104, 194, 253);
-	border-radius:6px;
-	margin:-2px -7px -3px -6px;
-    border: 0px; /* This seems to replace the whole arrow of the combo box */
-}
-
-QSpinBox::up-arrow  {
-	background-color:rgb(104, 194, 253);
-	border-radius:6px;
-	margin:-2px -7px -3px -6px;
-    border: 0px; /* This seems to replace the whole arrow of the combo box */}
-
-QSpinBox::up-arrow::pressed{
-	border-color:rgb(104, 194, 253);
-	border-width:2;
-	background-color : white;
-	color:rgb(104, 194, 253);
-}
-
-QSpinBox::down-arrow::pressed{
-	border-color:rgb(104, 194, 253);
-	border-width:4;
-	background-color : white;
-	color:rgb(104, 194, 253);
-}</string>
-    </property>
-    <property name="wrapping">
-     <bool>false</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="buttonSymbols">
-     <enum>QAbstractSpinBox::UpDownArrows</enum>
-    </property>
-    <property name="maximum">
-     <number>25</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -662,7 +573,7 @@ font-size: 18px &quot;Lato light&quot;</string>
     <property name="geometry">
      <rect>
       <x>155</x>
-      <y>408</y>
+      <y>420</y>
       <width>183</width>
       <height>44</height>
      </rect>
@@ -903,7 +814,7 @@ background-color: rgba(173, 237, 255, 0);
      <string notr="true">QPushButton{
  background-color:rgb(104, 194, 253);
  border-style: solid;
- border-radius:14px;
+ border-radius:17px;
 color: rgb(255, 255, 255);
 font: 12pt &quot;Lato&quot;;
 }
@@ -918,7 +829,7 @@ border-width:0;
 
 QPushButton::pressed{
 	border-color:rgb(104, 194, 253);
-	border-width:4;
+	border-width:2;
 	background-color : white;
 	color:rgb(104, 194, 253);
 }
@@ -931,7 +842,7 @@ QPushButton::pressed{
    <widget class="QComboBox" name="oreComboBox">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>274</x>
       <y>288</y>
       <width>71</width>
       <height>30</height>
@@ -983,6 +894,90 @@ QComboBox::drop-down  {
 border-radius:6px;
 margin:-3px -3px -3px -10px;
     border: 0px; /* This seems to replace the whole arrow of the combo box */
+
+}
+
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+background-color:#fff9be;
+	border: none;
+    width: 14px;
+    margin: 0px 0 0px 0;
+	border-radius: 7px;
+margin: 0px 0px 0px 0px;
+
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color:#68C2FD;
+	min-height: 30px;	
+	border-radius: 7px;
+
+}
+QScrollBar::handle:vertical:hover{	
+	background-color:#A6E4FF;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #5AA7D9;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:#68C2FD;
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: #5AA7D9;
+}
+
+/* BTN BOTTOM - SCROLLBAR  */
+QScrollBar::add-line:vertical {
+
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color:rgb(255, 255, 255)
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color:rgb(255, 255, 255)
+}
+
+/* RESET ARROW  */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+} 
+
+
+/* HORIZONTAL SCROLLBAR - HOMEWORK */
+QScrollBar:horizontal {
+   
+}
+QScrollBar::handle:horizontal {
+    
+}
+QScrollBar::add-line:horizontal {
+    
+}
+QScrollBar::sub-line:horizontal {
+    
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
 
 }
 </string>
@@ -1126,7 +1121,7 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>363</x>
+      <x>347</x>
       <y>285</y>
       <width>20</width>
       <height>31</height>
@@ -1152,7 +1147,7 @@ text-align: center;</string>
    <widget class="QComboBox" name="minutiComboBox">
     <property name="geometry">
      <rect>
-      <x>385</x>
+      <x>369</x>
       <y>288</y>
       <width>71</width>
       <height>30</height>
@@ -1247,7 +1242,7 @@ margin:-3px -3px -3px -10px;
    <widget class="QComboBox" name="durataComboBox">
     <property name="geometry">
      <rect>
-      <x>337</x>
+      <x>323</x>
       <y>347</y>
       <width>71</width>
       <height>30</height>
@@ -1288,7 +1283,6 @@ border-width:3;
 
 QComboBox::down-arrow {
     image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
-
     width: 26px;
     height: 26px;
 margin: 0px 0px 0px 0px
@@ -1338,6 +1332,89 @@ margin:-3px -3px -3px -10px;
       <string>45</string>
      </property>
     </item>
+   </widget>
+   <widget class="QSpinBox" name="capienzaSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>307</x>
+      <y>228</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox{
+background:rgb(255, 255, 255);
+border-radius:8px;
+border-color:rgb(255, 255, 255);
+border-style: solid;
+text-align:center;
+border-width:3;
+}
+
+QSpinBox::focus{
+background:rgb(255, 255, 255);
+border-radius:8px;
+border-color:rgb(104, 194, 253);
+border-style: solid;
+border-width:3;
+}
+
+
+QSpinBox::down-arrow {
+    image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
+background-color:rgb(104, 194, 253);
+	width: 26px;
+    height: 26px;
+	margin: 0px 0px 0px 0px
+}
+	
+QSpinBox::up-arrow {
+    image: url(:/icons/keyboard_arrow_up_FILL1_wght600_GRAD200_opsz48_risultato.png);
+}
+
+QSpinBox::down-arrow  {
+	background-color:rgb(104, 194, 253);
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+	margin:-2px -7px -3px -6px;
+
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+QSpinBox::up-arrow  {
+	background-color:rgb(104, 194, 253);
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+	margin:-2px -7px -3px -6px;
+    border: 0px; /* This seems to replace the whole arrow of the combo box */}
+
+QSpinBox::up-arrow::pressed{
+	border-color:rgb(104, 194, 253);
+	border-width:2;
+	background-color : white;
+	color:rgb(104, 194, 253);
+}
+
+QSpinBox::down-arrow::pressed{
+	border-color:rgb(104, 194, 253);
+	border-width:4;
+	background-color : white;
+	color:rgb(104, 194, 253);
+}</string>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="maximum">
+     <number>99</number>
+    </property>
    </widget>
   </widget>
  </widget>

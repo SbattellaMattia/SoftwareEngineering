@@ -208,47 +208,10 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>424</x>
-      <y>57</y>
-      <width>36</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Lato Light</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/icons/arrow_back_FILL1_wght700_GRAD200_opsz48_risultato.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="percorsoLabel">
     <property name="geometry">
      <rect>
-      <x>14</x>
+      <x>30</x>
       <y>57</y>
       <width>361</width>
       <height>31</height>
@@ -347,7 +310,7 @@ background-color: rgb(255, 249, 190);
 color: rgba(16, 16, 16, 100);
 font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 }</string>
     </property>
     <property name="text">
@@ -381,7 +344,7 @@ background-color: rgb(255, 249, 190);
 color: rgba(16, 16, 16, 100);
 font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 }</string>
     </property>
     <property name="text">
@@ -444,8 +407,14 @@ background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
 font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 border: 2px solid rgba(255, 255, 255);</string>
+    </property>
+    <property name="inputMask">
+     <string>&gt;AAAAA-AAAAA;#</string>
+    </property>
+    <property name="text">
+     <string>AAAAA-AAAAA</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

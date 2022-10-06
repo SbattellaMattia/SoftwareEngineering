@@ -7,24 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>489</width>
-    <height>667</height>
+    <height>688</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -256,7 +246,7 @@ font: 14pt &quot;Lato&quot;;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>217</y>
       <width>444</width>
       <height>4</height>
@@ -294,7 +284,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>233</y>
       <width>34</width>
       <height>34</height>
@@ -335,7 +325,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>106</x>
+      <x>102</x>
       <y>237</y>
       <width>91</width>
       <height>22</height>
@@ -368,7 +358,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>247</x>
+      <x>243</x>
       <y>97</y>
       <width>4</width>
       <height>360</height>
@@ -406,7 +396,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>106</x>
+      <x>102</x>
       <y>297</y>
       <width>51</width>
       <height>22</height>
@@ -439,7 +429,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>277</y>
       <width>444</width>
       <height>4</height>
@@ -477,7 +467,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>173</y>
       <width>34</width>
       <height>34</height>
@@ -518,7 +508,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>103</y>
       <width>444</width>
       <height>484</height>
@@ -541,7 +531,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>293</y>
       <width>34</width>
       <height>34</height>
@@ -582,7 +572,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>106</x>
+      <x>102</x>
       <y>119</y>
       <width>101</width>
       <height>22</height>
@@ -615,7 +605,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>113</y>
       <width>34</width>
       <height>34</height>
@@ -656,7 +646,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>106</x>
+      <x>102</x>
       <y>177</y>
       <width>81</width>
       <height>22</height>
@@ -689,7 +679,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>157</y>
       <width>444</width>
       <height>4</height>
@@ -727,7 +717,7 @@ text-align: center;</string>
    <widget class="QComboBox" name="tipoComboBox">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>266</x>
       <y>293</y>
       <width>183</width>
       <height>30</height>
@@ -822,7 +812,7 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>337</y>
       <width>444</width>
       <height>4</height>
@@ -860,7 +850,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>397</y>
       <width>444</width>
       <height>4</height>
@@ -898,7 +888,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>28</x>
+      <x>24</x>
       <y>457</y>
       <width>444</width>
       <height>4</height>
@@ -936,7 +926,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_21">
     <property name="geometry">
      <rect>
-      <x>107</x>
+      <x>103</x>
       <y>358</y>
       <width>131</width>
       <height>22</height>
@@ -969,7 +959,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>107</x>
+      <x>103</x>
       <y>418</y>
       <width>111</width>
       <height>22</height>
@@ -1002,7 +992,7 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>353</y>
       <width>34</width>
       <height>34</height>
@@ -1043,7 +1033,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLabel" name="label_24">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>413</y>
       <width>34</width>
       <height>34</height>
@@ -1084,7 +1074,7 @@ background-color: rgba(173, 237, 255, 0);
    <widget class="QLineEdit" name="titoloOperaLineEdit">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>266</x>
       <y>113</y>
       <width>183</width>
       <height>30</height>
@@ -1098,25 +1088,24 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Nascita di Venere</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>Nascita di Venere</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="autoreLineEdit">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>266</x>
       <y>173</y>
       <width>183</width>
       <height>30</height>
@@ -1130,25 +1119,24 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Sandro Botticelli</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>Sandro Botticelli</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="dimensioniLineEdit">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>266</x>
       <y>233</y>
       <width>183</width>
       <height>30</height>
@@ -1162,25 +1150,27 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
 text-align: center;
-font-family: Arial;
+
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
+    <property name="inputMask">
+     <string>000 \x 000 \c\m;0</string>
+    </property>
     <property name="text">
-     <string>172,5 x 278,5 cm</string>
+     <string> x  cm</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>172,5 x 278,5 cm</string>
     </property>
    </widget>
    <widget class="QComboBox" name="periodoStoricoComboBox">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>266</x>
       <y>353</y>
       <width>183</width>
       <height>30</height>
@@ -1300,7 +1290,7 @@ margin:-3px -3px -3px -10px;
    <widget class="QPushButton" name="cambiaButton">
     <property name="geometry">
      <rect>
-      <x>296</x>
+      <x>292</x>
       <y>413</y>
       <width>133</width>
       <height>34</height>
@@ -1325,7 +1315,7 @@ margin:-3px -3px -3px -10px;
      <string notr="true">QPushButton{
  background-color:rgb(104, 194, 253);
  border-style: solid;
- border-radius:14px;
+ border-radius:17px;
 color: rgb(255, 255, 255);
 font: 12pt &quot;Lato&quot;;
 }
@@ -1340,7 +1330,7 @@ border-width:0;
 
 QPushButton::pressed{
 	border-color:rgb(104, 194, 253);
-	border-width:4;
+	border-width:2;
 	background-color : white;
 	color:rgb(104, 194, 253);
 }
@@ -1353,7 +1343,7 @@ QPushButton::pressed{
    <widget class="QLabel" name="contenitoreFotoLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>46</x>
       <y>498</y>
       <width>398</width>
       <height>78</height>
@@ -1375,7 +1365,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_25">
     <property name="geometry">
      <rect>
-      <x>47</x>
+      <x>43</x>
       <y>468</y>
       <width>171</width>
       <height>22</height>
@@ -1408,11 +1398,14 @@ font-size: 18px &quot;Lato light&quot;</string>
    <widget class="QLabel" name="immagioneLabel">
     <property name="geometry">
      <rect>
-      <x>225</x>
+      <x>221</x>
       <y>512</y>
       <width>48</width>
       <height>48</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">left: 222px;
@@ -1427,7 +1420,7 @@ text-align: center;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>res/photo_camera_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
+     <pixmap resource="res/res.qrc">:/icons/add_a_photo_FILL1_wght600_GRAD200_opsz48_risultato.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1439,8 +1432,8 @@ text-align: center;</string>
    <widget class="QPushButton" name="confermaButton">
     <property name="geometry">
      <rect>
-      <x>159</x>
-      <y>601</y>
+      <x>154</x>
+      <y>620</y>
       <width>183</width>
       <height>44</height>
      </rect>
@@ -1528,8 +1521,7 @@ QPushButton::pressed{
   </widget>
  </widget>
  <resources>
-  <include location="../../../AppData/Local/Temp/res.qrc"/>
-  <include location="../../../AppData/Local/Temp/res/res.qrc"/>
+  <include location="res/res.qrc"/>
  </resources>
  <connections/>
 </ui>

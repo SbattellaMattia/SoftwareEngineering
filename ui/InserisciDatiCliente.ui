@@ -23,7 +23,15 @@ border-width:7;
 }
 QLabel{
 border-width:0;
-font: 18pt &quot;Lato Light&quot;;
+font: 16pt &quot;Lato Light&quot;;
+}
+QAbstractItemView {
+    border: 3px solid  rgb(104, 194, 253);  
+border-radius:8px;
+  selection-background-color:  rgb(104, 194, 253);
+margin:-2px;
+text-align:center;
+border-width:5;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -208,7 +216,7 @@ QPushButton::pressed{
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -397,19 +405,17 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
 text-align: center;
-font-family: Arial;
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Provenienza</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>Provenienza</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -533,7 +539,7 @@ font-size: 18px &quot;Lato light&quot;</string>
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -574,7 +580,7 @@ background-color: rgba(173, 237, 255, 0);
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -615,7 +621,7 @@ background-color: rgba(173, 237, 255, 0);
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>18</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -661,19 +667,27 @@ height: 30px;
 border-radius: 8px;
 background-color: rgba(255, 255, 255);
 color: rgba(96, 96, 96);
-font-size: 14px;
+
 text-align: center;
-font-family: Arial;
 border: 2px solid rgba(255, 255, 255);</string>
     </property>
+    <property name="inputMask">
+     <string>00/00/0000;0</string>
+    </property>
     <property name="text">
-     <string>gg/mm/yyyy</string>
+     <string>//</string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>C1098293</string>
+     <string>gg/mm/yyyy</string>
     </property>
    </widget>
    <widget class="QComboBox" name="sessoComboBox">
@@ -701,7 +715,6 @@ border: 2px solid rgba(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">
-
 QComboBox{
 background:rgb(255, 255, 255);
 border-radius:8px;
@@ -720,7 +733,6 @@ border-width:3;
 
 QComboBox::down-arrow {
     image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
-
     width: 26px;
     height: 26px;
 margin: 0px 0px 0px 0px
@@ -770,7 +782,7 @@ margin:-3px -3px -3px -10px;
     <property name="geometry">
      <rect>
       <x>125</x>
-      <y>362</y>
+      <y>364</y>
       <width>183</width>
       <height>44</height>
      </rect>

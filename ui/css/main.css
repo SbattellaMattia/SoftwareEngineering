@@ -14,6 +14,11 @@ QLineEdit{
 border-width:0;
 font: 14pt "Lato Light";
 }
+QSpinBox{
+border-width:0;
+font: 14pt "Lato Light";
+}
+
 QComboBox{
 border-width:0;
 font: 14pt "Lato Light";
