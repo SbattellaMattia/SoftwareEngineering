@@ -1,6 +1,7 @@
 import ctypes
 import os
 import sys
+import threading
 
 from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtCore import Qt
@@ -37,6 +38,19 @@ class ButtonTemplate(QMainWindow):
         # poiché si perdono i margini, li setto manualmente
         for bigButton in list(filter(lambda el:'bigbutton'in el.lower(),self.__dict__.keys())):
             getattr(self,bigButton).setMargin(17)
+
+        for checkBox in list(filter(lambda el:'checkbox'in el.lower(),self.__dict__.keys())):
+            setattr(self,checkBox+'Status',False)
+            getattr(self,checkBox).clicked.connect(self.checkBoxClicked)
+
+    def checkBoxClicked(self):
+        objName = self.sender().objectName()
+        if not getattr(self,objName+'Status'):
+            setattr(self,objName+'Status',True)
+            getattr(self, objName).setStyleSheet(open('ui/css/checkBoxOn.css', 'r').read())
+        else:
+            setattr(self,objName+'Status',False)
+            getattr(self, objName).setStyleSheet(open('ui/css/checkBoxOff.css', 'r').read())
 
     def maximize(self):
         if self.height() > 48:
@@ -77,7 +91,8 @@ class ButtonTemplate(QMainWindow):
             self.start = self.end
 
 
-if __name__ == "__main__":
+
+if __name__=='__main__':
     myappid = 'museum.1.0'
     ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
@@ -86,6 +101,6 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     print(len(filenames))
-    mainWidget = ButtonTemplate('ui/'+filenames[23])
+    mainWidget = ButtonTemplate('ui/'+filenames[8])
     mainWidget.show()
     sys.exit(app.exec())

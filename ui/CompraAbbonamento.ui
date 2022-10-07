@@ -51,13 +51,13 @@ border-width:5;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="HomeSegreteriaCompraAbbonamentoLabel">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>40</y>
+      <y>55</y>
       <width>511</width>
-      <height>61</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1494,7 +1494,7 @@ QPushButton::pressed{
    <zorder>label_2</zorder>
    <zorder>label_17</zorder>
    <zorder>label</zorder>
-   <zorder>HomeSegreteriaCompraAbbonamentoLabel</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>NomeLabel</zorder>
    <zorder>cognomeLabel</zorder>
    <zorder>codiceFiscaleLabel</zorder>

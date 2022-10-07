@@ -269,7 +269,7 @@ background-color: rgba(173, 237, 255, 0);
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLabel" name="ricercaSulWebButton">
+   <widget class="QLabel" name="ricercaSulWebBigButton">
     <property name="geometry">
      <rect>
       <x>66</x>
@@ -311,7 +311,7 @@ background-color: rgb(244, 233, 140);
      <number>17</number>
     </property>
    </widget>
-   <widget class="QLabel" name="inserisciManualmenteButton">
+   <widget class="QLabel" name="inserisciManualmenteBigButton">
     <property name="geometry">
      <rect>
       <x>261</x>

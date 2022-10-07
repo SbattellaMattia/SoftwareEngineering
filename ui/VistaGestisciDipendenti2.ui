@@ -7,24 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>570</width>
-    <height>706</height>
+    <height>707</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -257,7 +247,7 @@ font: 14pt &quot;Lato&quot;;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>140</y>
+      <y>141</y>
       <width>531</width>
       <height>31</height>
      </rect>
@@ -276,7 +266,7 @@ background-color: rgba(255, 255, 255,0);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;Fai click sulle immagini per vedere tutti i dettagli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -286,7 +276,7 @@ background-color: rgba(255, 255, 255,0);
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>120</y>
       <width>531</width>
       <height>31</height>
      </rect>
@@ -304,7 +294,7 @@ text-align: center;
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco la lista delle guide del museo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Ecco la lista dei dipendenti del museo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

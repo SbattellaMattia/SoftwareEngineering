@@ -535,14 +535,14 @@ background-color: rgba(255, 255, 255,0);</string>
      <rect>
       <x>30</x>
       <y>57</y>
-      <width>381</width>
+      <width>391</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Lato</family>
-      <pointsize>16</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -553,10 +553,10 @@ background-color: rgba(255, 255, 255,0);</string>
 text-align: left;
 background-color: rgba(255, 255, 255,0);
 color: #1684FC;
-font: 16pt &quot;Lato&quot;;</string>
+font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;HomeAmministrazione ➜ VisualizzaStatistiche&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>HomeAmministrazione ➜ Statistiche</string>
     </property>
    </widget>
    <widget class="QPushButton" name="visualizzaButton">
@@ -718,7 +718,7 @@ background-color: rgba(255, 255, 255,0);
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="sessoButton">
+   <widget class="QPushButton" name="sessoCheckBox">
     <property name="geometry">
      <rect>
       <x>334</x>
@@ -743,17 +743,14 @@ border-style: solid;
 }
 
 QPushButton:hover{
-background-color: rgb(104, 194, 253);
+background-color: rgb(160, 225, 253);
 border-color: rgb(255,255, 255);
 }
 
 QPushButton:pressed{
 background-color: rgb(104, 194, 253);
 border-color: rgb(255,255, 255);
-}
-
-
-</string>
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -778,7 +775,7 @@ border-color: rgb(255,255, 255);
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="etaButton">
+   <widget class="QPushButton" name="etaCheckBox">
     <property name="geometry">
      <rect>
       <x>334</x>
@@ -803,23 +800,20 @@ border-style: solid;
 }
 
 QPushButton:hover{
-background-color: rgb(104, 194, 253);
+background-color: rgb(160, 225, 253);
 border-color: rgb(255,255, 255);
 }
 
 QPushButton:pressed{
 background-color: rgb(104, 194, 253);
 border-color: rgb(255,255, 255);
-}
-
-
-</string>
+}</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="provenienzaButton">
+   <widget class="QPushButton" name="provenienzaCheckBox">
     <property name="geometry">
      <rect>
       <x>334</x>
@@ -844,17 +838,14 @@ border-style: solid;
 }
 
 QPushButton:hover{
-background-color: rgb(104, 194, 253);
+background-color: rgb(160, 225, 253);
 border-color: rgb(255,255, 255);
 }
 
 QPushButton:pressed{
 background-color: rgb(104, 194, 253);
 border-color: rgb(255,255, 255);
-}
-
-
-</string>
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -894,8 +885,11 @@ border-style: solid;
 border-width:3;
 }</string>
     </property>
+    <property name="inputMask">
+     <string>00/0000;0</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>/</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1103,10 +1097,10 @@ background-color: rgba(255, 255, 255,0);
    <zorder>label_8</zorder>
    <zorder>label_17</zorder>
    <zorder>label_9</zorder>
-   <zorder>sessoButton</zorder>
+   <zorder>sessoCheckBox</zorder>
    <zorder>frame</zorder>
-   <zorder>etaButton</zorder>
-   <zorder>provenienzaButton</zorder>
+   <zorder>etaCheckBox</zorder>
+   <zorder>provenienzaCheckBox</zorder>
    <zorder>label_16</zorder>
    <zorder>label_11</zorder>
    <zorder>dataLineEdit_2</zorder>

@@ -854,7 +854,7 @@ text-align: center;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel">
+   <widget class="QLabel" name="titoloOperaLabel">
     <property name="geometry">
      <rect>
       <x>110</x>
