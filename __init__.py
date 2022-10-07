@@ -1,5 +1,6 @@
 import ctypes
 import os
+import re
 import sys
 import threading
 
@@ -104,3 +105,8 @@ if __name__=='__main__':
     mainWidget = ButtonTemplate('ui/'+filenames[8])
     mainWidget.show()
     sys.exit(app.exec())
+
+    # path='C:\\Users\MrPio\Desktop\classes\Diagramma delle classi [PROGETTAZIONE]\\'
+    # for file in  next(os.walk(path), (None, None, []))[2]:
+    #     os.rename(path+file,
+    #               path+re.sub('(?<!^)(?=[A-Z])', '_', file.split('.')[0]).lower()+'.py')
