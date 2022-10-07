@@ -473,6 +473,9 @@ border-style: solid;
 border-width:3;
 }</string>
     </property>
+    <property name="inputMask">
+     <string/>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -723,8 +726,11 @@ border-style: solid;
 border-width:3;
 }</string>
     </property>
+    <property name="inputMask">
+     <string>00/00/0000;0</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>//</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

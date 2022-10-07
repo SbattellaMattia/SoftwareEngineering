@@ -208,7 +208,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="percorsoLabel">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -771,7 +771,7 @@ QPushButton::pressed{
    <zorder>reduceButton</zorder>
    <zorder>exitButton</zorder>
    <zorder>maximizeButton</zorder>
-   <zorder>percorsoLabel</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>indietroLabel</zorder>
    <zorder>qrCodeBigButton</zorder>
    <zorder>label_5</zorder>

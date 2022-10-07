@@ -208,7 +208,7 @@ QPushButton::pressed{
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel_2">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>33</x>

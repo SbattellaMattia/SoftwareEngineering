@@ -7,24 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>489</width>
-    <height>543</height>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton_3">
@@ -200,9 +190,9 @@ QPushButton::pressed{
     <property name="geometry">
      <rect>
       <x>24</x>
-      <y>120</y>
+      <y>116</y>
       <width>440</width>
-      <height>201</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -378,7 +368,7 @@ QPushButton::pressed{
     <property name="geometry">
      <rect>
       <x>24</x>
-      <y>170</y>
+      <y>175</y>
       <width>450</width>
       <height>4</height>
      </rect>
@@ -416,7 +406,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>24</x>
-      <y>220</y>
+      <y>235</y>
       <width>450</width>
       <height>4</height>
      </rect>
@@ -454,7 +444,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>14</x>
-      <y>270</y>
+      <y>295</y>
       <width>450</width>
       <height>4</height>
      </rect>
@@ -491,7 +481,7 @@ text-align: center;</string>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>74</x>
+      <x>82</x>
       <y>130</y>
       <width>131</width>
       <height>31</height>
@@ -510,8 +500,8 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="autoreLabel">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>180</y>
+      <x>82</x>
+      <y>190</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -528,8 +518,8 @@ background-color: rgba(255, 255, 255,0);</string>
    <widget class="QLabel" name="sizeLabel">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>280</y>
+      <x>82</x>
+      <y>310</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -580,19 +570,19 @@ background-color: rgba(255, 255, 255,0);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel_2">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>57</y>
-      <width>331</width>
+      <width>391</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Lato</family>
-      <pointsize>16</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -603,17 +593,17 @@ background-color: rgba(255, 255, 255,0);</string>
 text-align: left;
 background-color: rgba(255, 255, 255,0);
 color: #1684FC;
-font: 16pt &quot;Lato&quot;;</string>
+font: 14pt &quot;Lato&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;HomeReception ➜ CompraBiglietto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>HomeReception ➜ CompraBiglietto</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>74</x>
-      <y>230</y>
+      <x>82</x>
+      <y>250</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -633,7 +623,7 @@ background-color: rgba(255, 255, 255,0);</string>
       <x>242</x>
       <y>112</y>
       <width>4</width>
-      <height>215</height>
+      <height>250</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -669,7 +659,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>94</x>
-      <y>376</y>
+      <y>394</y>
       <width>34</width>
       <height>34</height>
      </rect>
@@ -691,7 +681,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>142</x>
-      <y>358</y>
+      <y>376</y>
       <width>101</width>
       <height>71</height>
      </rect>
@@ -702,25 +692,21 @@ text-align: left;
 background-color: rgba(255, 255, 255,0);</string>
     </property>
     <property name="text">
-     <string>Risultato:</string>
+     <string>Costo totale:</string>
     </property>
    </widget>
    <widget class="QLabel" name="importoTotaleLabel">
     <property name="geometry">
      <rect>
-      <x>224</x>
-      <y>372</y>
+      <x>210</x>
+      <y>390</y>
       <width>171</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Lato Light</family>
       <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -733,14 +719,14 @@ background-color: rgba(255, 255, 255,0);
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;importo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="ricercaButton">
+   <widget class="QPushButton" name="confermaButton">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>470</y>
+      <y>480</y>
       <width>209</width>
       <height>52</height>
      </rect>
@@ -770,8 +756,6 @@ color: rgb(255, 255, 255);
 }
 
 QPushButton::hover{
-
-
 	border-color : rgb(15, 138, 204);
 	color: white;
 border-width:0;
@@ -793,7 +777,7 @@ QPushButton::pressed{
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>353</y>
+      <y>371</y>
       <width>349</width>
       <height>78</height>
      </rect>
@@ -816,7 +800,7 @@ text-align: center;</string>
     <property name="geometry">
      <rect>
       <x>264</x>
-      <y>280</y>
+      <y>310</y>
       <width>178</width>
       <height>36</height>
      </rect>
@@ -824,7 +808,7 @@ text-align: center;</string>
     <property name="font">
      <font>
       <family>Lato</family>
-      <pointsize>9</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -842,7 +826,7 @@ text-align: center;</string>
  border-style: solid;
  border-radius:18px;
 color: rgb(255, 255, 255);
-	font: 9pt &quot;Lato&quot;;
+font: 12pt &quot;Lato&quot;;
 }
 
 QPushButton::hover{
@@ -855,21 +839,21 @@ border-width:0;
 
 QPushButton::pressed{
 	border-color:rgb(104, 194, 253);
-	border-width:4;
+	border-width:2;
 	background-color : white;
 	color:rgb(104, 194, 253);
 }
 </string>
     </property>
     <property name="text">
-     <string>Verifica abbonamento</string>
+     <string>Verifica</string>
     </property>
    </widget>
    <widget class="QPushButton" name="ricercaButton_3">
     <property name="geometry">
      <rect>
       <x>264</x>
-      <y>230</y>
+      <y>250</y>
       <width>178</width>
       <height>36</height>
      </rect>
@@ -877,7 +861,7 @@ QPushButton::pressed{
     <property name="font">
      <font>
       <family>Lato</family>
-      <pointsize>9</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -895,7 +879,7 @@ QPushButton::pressed{
  border-style: solid;
  border-radius:18px;
 color: rgb(255, 255, 255);
-	font: 9pt &quot;Lato&quot;;
+font: 12pt &quot;Lato&quot;;
 }
 
 QPushButton::hover{
@@ -908,7 +892,7 @@ border-width:0;
 
 QPushButton::pressed{
 	border-color:rgb(104, 194, 253);
-	border-width:4;
+	border-width:2;
 	background-color : white;
 	color:rgb(104, 194, 253);
 }
@@ -930,7 +914,7 @@ QPushButton::pressed{
     <property name="font">
      <font>
       <family>Lato Light</family>
-      <pointsize>11</pointsize>
+      <pointsize>14</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -962,7 +946,6 @@ border-width:3;
 
 QComboBox::down-arrow {
     image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
-
     width: 26px;
     height: 26px;
 margin: 0px 0px 0px 0px
@@ -1007,7 +990,7 @@ margin:-3px -3px -3px -10px;
     <property name="geometry">
      <rect>
       <x>284</x>
-      <y>180</y>
+      <y>190</y>
       <width>150</width>
       <height>30</height>
      </rect>
@@ -1047,7 +1030,6 @@ border-width:3;
 
 QComboBox::down-arrow {
     image: url(:/icons/expand_more_FILL1_wght600_GRAD200_opsz48_risultato.png);
-
     width: 26px;
     height: 26px;
 margin: 0px 0px 0px 0px
@@ -1096,8 +1078,8 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>280</y>
+      <x>38</x>
+      <y>310</y>
       <width>34</width>
       <height>34</height>
      </rect>
@@ -1118,8 +1100,8 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>230</y>
+      <x>38</x>
+      <y>250</y>
       <width>34</width>
       <height>34</height>
      </rect>
@@ -1140,8 +1122,8 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>180</y>
+      <x>38</x>
+      <y>190</y>
       <width>34</width>
       <height>34</height>
      </rect>
@@ -1162,7 +1144,7 @@ margin:-3px -3px -3px -10px;
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>38</x>
       <y>130</y>
       <width>34</width>
       <height>34</height>
@@ -1197,13 +1179,13 @@ margin:-3px -3px -3px -10px;
    <zorder>autoreLabel</zorder>
    <zorder>sizeLabel</zorder>
    <zorder>label_18</zorder>
-   <zorder>titoloLabel_2</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>label_13</zorder>
    <zorder>label_8</zorder>
    <zorder>label_10</zorder>
    <zorder>label_15</zorder>
    <zorder>importoTotaleLabel</zorder>
-   <zorder>ricercaButton</zorder>
+   <zorder>confermaButton</zorder>
    <zorder>ricercaButton_2</zorder>
    <zorder>ricercaButton_3</zorder>
    <zorder>tipoRicercaComboBox</zorder>

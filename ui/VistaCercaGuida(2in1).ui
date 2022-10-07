@@ -14,17 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-background:rgb(255, 255, 255);
-border-radius:26px;
-border-color:rgb(104, 194, 253);
-border-style: solid;
-border-width:7;
-}
-QLabel{
-border-width:0;
-font: 18pt &quot;Lato Light&quot;;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -233,7 +223,7 @@ QPushButton::pressed{
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="percorsoLabel">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -473,8 +463,11 @@ border-style: solid;
 border-width:3;
 }</string>
     </property>
+    <property name="inputMask">
+     <string>00/00/0000;0</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>//</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -533,7 +526,7 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QPushButton" name="ricercaButton">
     <property name="geometry">
      <rect>
-      <x>181</x>
+      <x>179</x>
       <y>190</y>
       <width>209</width>
       <height>52</height>
@@ -625,10 +618,10 @@ text-align: center;</string>
    <widget class="QLabel" name="frecciaSxLabel">
     <property name="geometry">
      <rect>
-      <x>75</x>
-      <y>180</y>
-      <width>81</width>
-      <height>71</height>
+      <x>68</x>
+      <y>187</y>
+      <width>54</width>
+      <height>54</height>
      </rect>
     </property>
     <property name="cursor">
@@ -653,10 +646,10 @@ background-color: rgba(255, 255, 255,0);
    <widget class="QLabel" name="frecciaDxLabel">
     <property name="geometry">
      <rect>
-      <x>415</x>
-      <y>180</y>
-      <width>81</width>
-      <height>71</height>
+      <x>447</x>
+      <y>187</y>
+      <width>54</width>
+      <height>54</height>
      </rect>
     </property>
     <property name="cursor">
@@ -687,7 +680,7 @@ background-color: rgba(255, 255, 255,0);
    <zorder>exitButton</zorder>
    <zorder>maximizeButton</zorder>
    <zorder>indietroLabel</zorder>
-   <zorder>percorsoLabel</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>scrollArea</zorder>
    <zorder>titoloLabel_3</zorder>
    <zorder>label_11</zorder>

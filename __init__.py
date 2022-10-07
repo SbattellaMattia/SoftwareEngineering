@@ -19,7 +19,10 @@ class ButtonTemplate(QMainWindow):
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
         self.setWindowIcon(QtGui.QIcon('ico/museum_white.ico'))
         self.exitButton.clicked.connect(self.close)
+        self.maximizeButton.clicked.connect(self.maximize)
         self.reduceButton.clicked.connect(self.showMinimized)
+
+        self.maxHeight=self.height()
 
         # ATTENZIONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # dopo tantissimo try&error ho scoperto che gli errori di rendering sono dovuti
@@ -34,6 +37,18 @@ class ButtonTemplate(QMainWindow):
         # poiché si perdono i margini, li setto manualmente
         for bigButton in list(filter(lambda el:'bigbutton'in el.lower(),self.__dict__.keys())):
             getattr(self,bigButton).setMargin(17)
+
+    def maximize(self):
+        if self.height() > 48:
+            self.setMinimumHeight(48)
+            self.setMaximumHeight(48)
+            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(),9,self.geometry().width()-130,
+                                         self.titoloLabel.geometry().height())
+        else:
+            self.setMaximumHeight(self.maxHeight)
+            self.setMinimumHeight(self.maxHeight)
+            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(), 57, self.geometry().width()-60,
+                                         self.titoloLabel.geometry().height())
 
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Escape:
@@ -71,6 +86,6 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     print(len(filenames))
-    mainWidget = ButtonTemplate('ui/'+filenames[20])
+    mainWidget = ButtonTemplate('ui/'+filenames[23])
     mainWidget.show()
     sys.exit(app.exec())

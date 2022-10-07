@@ -570,7 +570,7 @@ background-color: rgba(255, 255, 255,0);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel_2">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -1425,7 +1425,7 @@ border-width:3;
    <zorder>autoreLabel</zorder>
    <zorder>sizeLabel</zorder>
    <zorder>label_18</zorder>
-   <zorder>titoloLabel_2</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>label_13</zorder>
    <zorder>label_8</zorder>
    <zorder>ricercaButton</zorder>

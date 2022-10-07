@@ -574,7 +574,7 @@ background-color: rgba(255, 255, 255, 255);</string>
          <number>10</number>
         </property>
        </widget>
-       <widget class="QLabel" name="titoloLabel_20">
+       <widget class="QLabel" name="titoloLabel0">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -596,7 +596,7 @@ background-color: rgba(255, 255, 255,0);
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="titoloLabel_21">
+       <widget class="QLabel" name="titoloLabel1">
         <property name="geometry">
          <rect>
           <x>117</x>
@@ -804,7 +804,7 @@ background-color: rgba(255, 255, 255, 255);</string>
          <number>10</number>
         </property>
        </widget>
-       <widget class="QLabel" name="titoloLabel_24">
+       <widget class="QLabel" name="titoloLabel4">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -826,7 +826,7 @@ background-color: rgba(255, 255, 255,0);
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="titoloLabel_25">
+       <widget class="QLabel" name="titoloLabel5">
         <property name="geometry">
          <rect>
           <x>117</x>

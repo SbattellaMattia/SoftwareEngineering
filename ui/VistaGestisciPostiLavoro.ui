@@ -233,7 +233,7 @@ QPushButton::pressed{
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="percorsoLabel">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -945,7 +945,7 @@ text-align: center;</string>
    <zorder>exitButton</zorder>
    <zorder>maximizeButton</zorder>
    <zorder>indietroLabel</zorder>
-   <zorder>percorsoLabel</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>scrollArea</zorder>
    <zorder>titoloLabel</zorder>
    <zorder>label_2</zorder>

@@ -223,7 +223,7 @@ QPushButton::pressed{
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="titoloLabel_2">
+   <widget class="QLabel" name="titoloLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -558,7 +558,7 @@ background-color: #b6e9ff;</string>
    <zorder>exitButton</zorder>
    <zorder>maximizeButton</zorder>
    <zorder>indietroLabel</zorder>
-   <zorder>titoloLabel_2</zorder>
+   <zorder>titoloLabel</zorder>
    <zorder>titoloLabel_3</zorder>
    <zorder>titoloLabel</zorder>
    <zorder>pushButton</zorder>
