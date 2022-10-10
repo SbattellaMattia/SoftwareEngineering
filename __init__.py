@@ -102,7 +102,7 @@ if __name__=='__main__':
 
     app = QApplication(sys.argv)
     print(len(filenames))
-    mainWidget = ButtonTemplate('ui/'+filenames[8])
+    mainWidget = ButtonTemplate('ui/'+filenames[7])
     mainWidget.show()
     sys.exit(app.exec())
 
