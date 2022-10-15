@@ -12,7 +12,7 @@ import myRes
 
 
 class ButtonTemplate(QMainWindow):
-    def __init__(self,uiFile):
+    def __init__(self, uiFile):
         super().__init__()
         print(uiFile)
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
@@ -24,7 +24,7 @@ class ButtonTemplate(QMainWindow):
         self.maximizeButton.clicked.connect(self.maximize)
         self.reduceButton.clicked.connect(self.showMinimized)
 
-        self.maxHeight=self.height()
+        self.maxHeight = self.height()
 
         # ATTENZIONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # dopo tantissimo try&error ho scoperto che gli errori di rendering sono dovuti
@@ -37,32 +37,32 @@ class ButtonTemplate(QMainWindow):
         self.setStyleSheet(open('ui/css/main.css', 'r').read())
 
         # poiché si perdono i margini, li setto manualmente
-        for bigButton in list(filter(lambda el:'bigbutton'in el.lower(),self.__dict__.keys())):
-            getattr(self,bigButton).setMargin(17)
+        for bigButton in list(filter(lambda el: 'bigbutton' in el.lower(), self.__dict__.keys())):
+            getattr(self, bigButton).setMargin(17)
 
-        for checkBox in list(filter(lambda el:'checkbox'in el.lower(),self.__dict__.keys())):
-            setattr(self,checkBox+'Status',False)
-            getattr(self,checkBox).clicked.connect(self.checkBoxClicked)
+        for checkBox in list(filter(lambda el: 'checkbox' in el.lower(), self.__dict__.keys())):
+            setattr(self, checkBox + 'Status', False)
+            getattr(self, checkBox).clicked.connect(self.checkBoxClicked)
 
     def checkBoxClicked(self):
         objName = self.sender().objectName()
-        if not getattr(self,objName+'Status'):
-            setattr(self,objName+'Status',True)
+        if not getattr(self, objName + 'Status'):
+            setattr(self, objName + 'Status', True)
             getattr(self, objName).setStyleSheet(open('ui/css/checkBoxOn.css', 'r').read())
         else:
-            setattr(self,objName+'Status',False)
+            setattr(self, objName + 'Status', False)
             getattr(self, objName).setStyleSheet(open('ui/css/checkBoxOff.css', 'r').read())
 
     def maximize(self):
         if self.height() > 48:
             self.setMinimumHeight(48)
             self.setMaximumHeight(48)
-            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(),9,self.geometry().width()-130,
+            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(), 9, self.geometry().width() - 130,
                                          self.titoloLabel.geometry().height())
         else:
             self.setMaximumHeight(self.maxHeight)
             self.setMinimumHeight(self.maxHeight)
-            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(), 57, self.geometry().width()-60,
+            self.titoloLabel.setGeometry(self.titoloLabel.geometry().x(), 57, self.geometry().width() - 60,
                                          self.titoloLabel.geometry().height())
 
     def keyPressEvent(self, e):
@@ -75,7 +75,6 @@ class ButtonTemplate(QMainWindow):
         self.start = self.mapToGlobal(event.pos())
         self.pressing = True
         QApplication.setOverrideCursor(Qt.SizeAllCursor)
-
 
     def mouseReleaseEvent(self, event):
         self.pressing = False
@@ -92,8 +91,7 @@ class ButtonTemplate(QMainWindow):
             self.start = self.end
 
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     myappid = 'museum.1.0'
     ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
@@ -102,7 +100,7 @@ if __name__=='__main__':
 
     app = QApplication(sys.argv)
     print(len(filenames))
-    mainWidget = ButtonTemplate('ui/'+filenames[7])
+    mainWidget = ButtonTemplate('ui/' + 'VistaAccount.ui')  # +filenames[7])
     mainWidget.show()
     sys.exit(app.exec())
 
