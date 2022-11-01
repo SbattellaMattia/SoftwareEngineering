@@ -7,7 +7,7 @@
 
 
 # Diagramma delle classi (legacy) [COMPLETO]:
-![d](https://github.com/SbattellaMattia/SoftwareEngineering/blob/main/Software%20Museum/images/Diagramma%20delle%20classi%20%5BPROGETTAZIONE%5D/Diagramma%20delle%20classi%20%5BPROGETTAZIONE%5D.png)
+![d](https://github.com/SbattellaMattia/SoftwareEngineering/blob/main/images/Diagramma%20delle%20classi%20%5BPROGETTAZIONE%5D/Diagramma%20delle%20classi%20%5BPROGETTAZIONE%5D.png)
 
 
 # Mokup:
