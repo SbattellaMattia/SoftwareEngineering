@@ -1,9 +1,18 @@
 ## Progetto esame ingegneria del software aa 2021/2022
 
->Implementazione progetto:
+## Tesina
+> Puoi trovare qui la tesina completa, scritta in latex, del progetto:
 >
->https://github.com/MrPio/MuseoOmero/
+> *https://www.dropbox.com/s/6hcrl7o1w93vmvf/MuseoOmero%20Morelli-Sbattella-Sumcutean-Achilli.pdf?dl=0*
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Implementazione progetto
+> Puoi trovare qui l'implementazione del progetto:
+>
+> *https://github.com/MrPio/MuseoOmero/*
 ***
+
 
 
 # Diagramma delle classi (legacy) [COMPLETO]:
